@@ -1,0 +1,5158 @@
+{
+ "AI chats/2025-08-12 Chat - pricing and growth ideas.md::0": {
+  "model": "hand-written",
+  "entities": [
+   {
+    "name": "Harbour Blend",
+    "type": "Product",
+    "aliases": [],
+    "description": "House blend"
+   },
+   {
+    "name": "Canned cold brew",
+    "type": "Product",
+    "aliases": [],
+    "description": "Suggested summer product"
+   },
+   {
+    "name": "Millbrook kiosk",
+    "type": "Project",
+    "aliases": [],
+    "description": "Suggested test kiosk in Millbrook"
+   },
+   {
+    "name": "Loyalty app",
+    "type": "Product",
+    "aliases": [],
+    "description": "Suggested app for subscribers"
+   }
+  ],
+  "relationships": [],
+  "claims": [
+   {
+    "subject": "Harbour Blend",
+    "attribute": "wholesale price",
+    "value": "$26.50 per kg",
+    "valid_from": null,
+    "valid_to": null,
+    "modality": "fact",
+    "confidence": "high",
+    "evidence": null,
+    "quote": "Our house blend wholesales at $26.50 per kg"
+   },
+   {
+    "subject": "Harbour Blend",
+    "attribute": "wholesale price",
+    "value": "$32 per kg",
+    "valid_from": null,
+    "valid_to": null,
+    "modality": "ai_suggestion",
+    "confidence": "high",
+    "evidence": null,
+    "quote": "Raise the house blend to $32 per kg"
+   },
+   {
+    "subject": "Canned cold brew",
+    "attribute": "status",
+    "value": "suggested as first step",
+    "valid_from": null,
+    "valid_to": null,
+    "modality": "ai_suggestion",
+    "confidence": "high",
+    "evidence": null,
+    "quote": "Launch a canned cold brew line for summer"
+   },
+   {
+    "subject": "Millbrook kiosk",
+    "attribute": "status",
+    "value": "suggested",
+    "valid_from": null,
+    "valid_to": null,
+    "modality": "ai_suggestion",
+    "confidence": "high",
+    "evidence": null,
+    "quote": "Open a small kiosk in Millbrook to test demand"
+   },
+   {
+    "subject": "Loyalty app",
+    "attribute": "status",
+    "value": "suggested",
+    "valid_from": null,
+    "valid_to": null,
+    "modality": "ai_suggestion",
+    "confidence": "high",
+    "evidence": null,
+    "quote": "Build a loyalty app for subscription customers"
+   }
+  ]
+ },
+ "Clients/Corner Hound Cafe.md::0": {
+  "model": "hand-written",
+  "entities": [
+   {
+    "name": "Corner Hound Cafe",
+    "type": "Organization",
+    "aliases": [
+     "Corner Hound"
+    ],
+    "description": "Dog-friendly café on Quay Street; Fernwick's first wholesale customer"
+   },
+   {
+    "name": "Sam Whitlock",
+    "type": "Person",
+    "aliases": [],
+    "description": "Owner of Corner Hound Cafe"
+   },
+   {
+    "name": "Fernwick Roasting Co",
+    "type": "Organization",
+    "aliases": [
+     "Fernwick"
+    ],
+    "description": "Coffee roaster"
+   },
+   {
+    "name": "Harbour Blend",
+    "type": "Product",
+    "aliases": [],
+    "description": "House blend"
+   }
+  ],
+  "relationships": [
+   {
+    "source": "Corner Hound Cafe",
+    "target": "Fernwick Roasting Co",
+    "type": "CLIENT_OF",
+    "detail": "first wholesale customer, since March 2022",
+    "valid_from": "2022-03",
+    "valid_to": null,
+    "modality": "fact",
+    "confidence": "high"
+   },
+   {
+    "source": "Sam Whitlock",
+    "target": "Corner Hound Cafe",
+    "type": "ROLE_AT",
+    "detail": "owner",
+    "valid_from": null,
+    "valid_to": null,
+    "modality": "fact",
+    "confidence": "high"
+   },
+   {
+    "source": "Corner Hound Cafe",
+    "target": "Harbour Blend",
+    "type": "USES",
+    "detail": "about 25 kg a month",
+    "valid_from": null,
+    "valid_to": null,
+    "modality": "fact",
+    "confidence": "high"
+   }
+  ],
+  "claims": [
+   {
+    "subject": "Corner Hound Cafe",
+    "attribute": "client rank",
+    "value": "first wholesale customer",
+    "valid_from": null,
+    "valid_to": null,
+    "modality": "fact",
+    "confidence": "high",
+    "evidence": null,
+    "quote": "Our first wholesale customer, since March 2022"
+   },
+   {
+    "subject": "Corner Hound Cafe",
+    "attribute": "monthly volume",
+    "value": "about 25 kg",
+    "valid_from": null,
+    "valid_to": null,
+    "modality": "fact",
+    "confidence": "high",
+    "evidence": null,
+    "quote": "about 25 kg a month"
+   }
+  ]
+ },
+ "Clients/Halyard Hotel.md::0": {
+  "model": "hand-written",
+  "entities": [
+   {
+    "name": "Halyard Hotel",
+    "type": "Organization",
+    "aliases": [],
+    "description": "Boutique hotel on the seafront"
+   },
+   {
+    "name": "Port Alder Hospitality Expo 2024",
+    "type": "Event",
+    "aliases": [],
+    "description": "Trade show where Fernwick met Halyard's F&B manager"
+   },
+   {
+    "name": "Fernwick Roasting Co",
+    "type": "Organization",
+    "aliases": [
+     "Fernwick"
+    ],
+    "description": "Coffee roaster"
+   },
+   {
+    "name": "Sam Patel",
+    "type": "Person",
+    "aliases": [],
+    "description": "Trained Halyard's breakfast team"
+   },
+   {
+    "name": "Harbour Blend",
+    "type": "Product",
+    "aliases": [],
+    "description": "House blend"
+   }
+  ],
+  "relationships": [
+   {
+    "source": "Halyard Hotel",
+    "target": "Fernwick Roasting Co",
+    "type": "CLIENT_OF",
+    "detail": "wholesale client since February 2025",
+    "valid_from": "2025-02",
+    "valid_to": null,
+    "modality": "fact",
+    "confidence": "high"
+   },
+   {
+    "source": "Fernwick Roasting Co",
+    "target": "Port Alder Hospitality Expo 2024",
+    "type": "PARTICIPATED_IN",
+    "detail": "met Halyard's food and beverage manager",
+    "valid_from": "2024-11",
+    "valid_to": null,
+    "modality": "fact",
+    "confidence": "high"
+   },
+   {
+    "source": "Halyard Hotel",
+    "target": "Harbour Blend",
+    "type": "USES",
+    "detail": "in the bar; filter for breakfast",
+    "valid_from": null,
+    "valid_to": null,
+    "modality": "fact",
+    "confidence": "high"
+   }
+  ],
+  "claims": [
+   {
+    "subject": "Halyard Hotel",
+    "attribute": "monthly volume",
+    "value": "about 60 kg",
+    "valid_from": null,
+    "valid_to": null,
+    "modality": "fact",
+    "confidence": "high",
+    "evidence": null,
+    "quote": "about 60 kg a month"
+   },
+   {
+    "subject": "Halyard Hotel",
+    "attribute": "client since",
+    "value": "February 2025",
+    "valid_from": null,
+    "valid_to": null,
+    "modality": "fact",
+    "confidence": "high",
+    "evidence": null,
+    "quote": "wholesale client since February 2025"
+   }
+  ]
+ },
+ "Clients/Juniper Cafe Group.md::0": {
+  "model": "hand-written",
+  "entities": [
+   {
+    "name": "Juniper Cafe Group",
+    "type": "Organization",
+    "aliases": [
+     "Juniper"
+    ],
+    "description": "Group of six cafés; Fernwick's largest wholesale account"
+   },
+   {
+    "name": "Owen Brandt",
+    "type": "Person",
+    "aliases": [],
+    "description": "Head of purchasing at Juniper Cafe Group"
+   },
+   {
+    "name": "Priya Nandakumar",
+    "type": "Person",
+    "aliases": [],
+    "description": "Advisor who introduced Juniper to Fernwick"
+   },
+   {
+    "name": "Fernwick Roasting Co",
+    "type": "Organization",
+    "aliases": [
+     "Fernwick"
+    ],
+    "description": "Coffee roaster"
+   },
+   {
+    "name": "Harbour Blend",
+    "type": "Product",
+    "aliases": [],
+    "description": "House blend Juniper buys"
+   },
+   {
+    "name": "Daniel Reyes",
+    "type": "Person",
+    "aliases": [],
+    "description": "Head roaster testing oat-milk espressos"
+   },
+   {
+    "name": "Port Alder",
+    "type": "Location",
+    "aliases": [],
+    "description": "Town"
+   },
+   {
+    "name": "Millbrook",
+    "type": "Location",
+    "aliases": [],
+    "description": "Town"
+   }
+  ],
+  "relationships": [
+   {
+    "source": "Juniper Cafe Group",
+    "target": "Fernwick Roasting Co",
+    "type": "CLIENT_OF",
+    "detail": "largest wholesale account since July 2024",
+    "valid_from": "2024-07",
+    "valid_to": null,
+    "modality": "fact",
+    "confidence": "high"
+   },
+   {
+    "source": "Owen Brandt",
+    "target": "Juniper Cafe Group",
+    "type": "ROLE_AT",
+    "detail": "head of purchasing",
+    "valid_from": null,
+    "valid_to": null,
+    "modality": "fact",
+    "confidence": "high"
+   },
+   {
+    "source": "Priya Nandakumar",
+    "target": "Juniper Cafe Group",
+    "type": "INTRODUCED",
+    "detail": "made the introduction to Fernwick",
+    "valid_from": null,
+    "valid_to": null,
+    "modality": "fact",
+    "confidence": "high"
+   },
+   {
+    "source": "Juniper Cafe Group",
+    "target": "Harbour Blend",
+    "type": "USES",
+    "detail": "about 180 kg a month with a seasonal single origin",
+    "valid_from": null,
+    "valid_to": null,
+    "modality": "fact",
+    "confidence": "high"
+   },
+   {
+    "source": "Juniper Cafe Group",
+    "target": "Port Alder",
+    "type": "LOCATED_IN",
+    "detail": "cafés across Port Alder and Millbrook",
+    "valid_from": null,
+    "valid_to": null,
+    "modality": "fact",
+    "confidence": "high"
+   },
+   {
+    "source": "Juniper Cafe Group",
+    "target": "Millbrook",
+    "type": "LOCATED_IN",
+    "detail": "cafés across Port Alder and Millbrook",
+    "valid_from": null,
+    "valid_to": null,
+    "modality": "fact",
+    "confidence": "high"
+   }
+  ],
+  "claims": [
+   {
+    "subject": "Juniper Cafe Group",
+    "attribute": "client rank",
+    "value": "largest wholesale account",
+    "valid_from": null,
+    "valid_to": null,
+    "modality": "fact",
+    "confidence": "high",
+    "evidence": null,
+    "quote": "our largest wholesale account since July 2024"
+   },
+   {
+    "subject": "Juniper Cafe Group",
+    "attribute": "monthly volume",
+    "value": "about 180 kg",
+    "valid_from": null,
+    "valid_to": null,
+    "modality": "fact",
+    "confidence": "high",
+    "evidence": null,
+    "quote": "around 180 kg a month"
+   },
+   {
+    "subject": "Juniper Cafe Group",
+    "attribute": "contract price",
+    "value": "$27.00 per kg",
+    "valid_from": "2026-01",
+    "valid_to": null,
+    "modality": "fact",
+    "confidence": "high",
+    "evidence": null,
+    "quote": "renewed for a year at a volume price of $27.00 per kg"
+   },
+   {
+    "subject": "Juniper Cafe Group",
+    "attribute": "request",
+    "value": "espresso that works better with oat milk",
+    "valid_from": null,
+    "valid_to": null,
+    "modality": "reported",
+    "confidence": "high",
+    "evidence": null,
+    "quote": "Owen has asked for an espresso that works better with oat milk"
+   }
+  ]
+ },
+ "Clients/Little Tern Bakery.md::0": {
+  "model": "hand-written",
+  "entities": [
+   {
+    "name": "Little Tern Bakery",
+    "type": "Organization",
+    "aliases": [],
+    "description": "Bakery and café in the old harbour market"
+   },
+   {
+    "name": "Fernwick Roasting Co",
+    "type": "Organization",
+    "aliases": [
+     "Fernwick"
+    ],
+    "description": "Coffee roaster"
+   },
+   {
+    "name": "Harbour Blend",
+    "type": "Product",
+    "aliases": [],
+    "description": "House blend"
+   }
+  ],
+  "relationships": [
+   {
+    "source": "Little Tern Bakery",
+    "target": "Fernwick Roasting Co",
+    "type": "CLIENT_OF",
+    "detail": "wholesale client since May 2023",
+    "valid_from": "2023-05",
+    "valid_to": null,
+    "modality": "fact",
+    "confidence": "high"
+   },
+   {
+    "source": "Little Tern Bakery",
+    "target": "Harbour Blend",
+    "type": "USES",
+    "detail": "for espresso, with Swiss Water decaf",
+    "valid_from": null,
+    "valid_to": null,
+    "modality": "fact",
+    "confidence": "high"
+   }
+  ],
+  "claims": [
+   {
+    "subject": "Little Tern Bakery",
+    "attribute": "monthly volume",
+    "value": "about 15 kg",
+    "valid_from": null,
+    "valid_to": null,
+    "modality": "fact",
+    "confidence": "high",
+    "evidence": null,
+    "quote": "about 15 kg a month in total"
+   }
+  ]
+ },
+ "Clients/Northgate Library Cafe.md::0": {
+  "model": "hand-written",
+  "entities": [
+   {
+    "name": "Northgate Library Cafe",
+    "type": "Organization",
+    "aliases": [],
+    "description": "Café inside Northgate Library run as a training kitchen"
+   },
+   {
+    "name": "Northgate Community Trust",
+    "type": "Organization",
+    "aliases": [],
+    "description": "Social enterprise that runs Northgate Library Cafe"
+   },
+   {
+    "name": "Fernwick Roasting Co",
+    "type": "Organization",
+    "aliases": [
+     "Fernwick"
+    ],
+    "description": "Coffee roaster"
+   }
+  ],
+  "relationships": [
+   {
+    "source": "Northgate Library Cafe",
+    "target": "Fernwick Roasting Co",
+    "type": "CLIENT_OF",
+    "detail": "wholesale client since September 2025",
+    "valid_from": "2025-09",
+    "valid_to": null,
+    "modality": "fact",
+    "confidence": "high"
+   },
+   {
+    "source": "Northgate Library Cafe",
+    "target": "Northgate Community Trust",
+    "type": "PART_OF",
+    "detail": "run by the trust",
+    "valid_from": null,
+    "valid_to": null,
+    "modality": "fact",
+    "confidence": "high"
+   }
+  ],
+  "claims": [
+   {
+    "subject": "Northgate Library Cafe",
+    "attribute": "price per kg",
+    "value": "$25.00 community rate",
+    "valid_from": null,
+    "valid_to": null,
+    "modality": "fact",
+    "confidence": "high",
+    "evidence": null,
+    "quote": "a community rate of $25.00 per kg"
+   },
+   {
+    "subject": "Northgate Library Cafe",
+    "attribute": "monthly volume",
+    "value": "about 10 kg",
+    "valid_from": null,
+    "valid_to": null,
+    "modality": "fact",
+    "confidence": "high",
+    "evidence": null,
+    "quote": "about 10 kg a month"
+   }
+  ]
+ },
+ "Clients/Pine and Pour.md::0": {
+  "model": "hand-written",
+  "entities": [
+   {
+    "name": "Pine and Pour",
+    "type": "Organization",
+    "aliases": [],
+    "description": "New café in the Northgate area"
+   },
+   {
+    "name": "Sam Whitlock",
+    "type": "Person",
+    "aliases": [],
+    "description": "Café owner who referred Pine and Pour"
+   },
+   {
+    "name": "Fernwick Roasting Co",
+    "type": "Organization",
+    "aliases": [
+     "Fernwick"
+    ],
+    "description": "Coffee roaster"
+   },
+   {
+    "name": "Harbour Blend",
+    "type": "Product",
+    "aliases": [],
+    "description": "House blend"
+   }
+  ],
+  "relationships": [
+   {
+    "source": "Pine and Pour",
+    "target": "Fernwick Roasting Co",
+    "type": "CLIENT_OF",
+    "detail": "wholesale client since January 2026",
+    "valid_from": "2026-01",
+    "valid_to": null,
+    "modality": "fact",
+    "confidence": "high"
+   },
+   {
+    "source": "Sam Whitlock",
+    "target": "Pine and Pour",
+    "type": "INTRODUCED",
+    "detail": "referred the owners to Fernwick",
+    "valid_from": null,
+    "valid_to": null,
+    "modality": "fact",
+    "confidence": "high"
+   },
+   {
+    "source": "Pine and Pour",
+    "target": "Harbour Blend",
+    "type": "USES",
+    "detail": "about 20 kg a month",
+    "valid_from": null,
+    "valid_to": null,
+    "modality": "fact",
+    "confidence": "high"
+   }
+  ],
+  "claims": [
+   {
+    "subject": "Pine and Pour",
+    "attribute": "monthly volume",
+    "value": "about 20 kg",
+    "valid_from": null,
+    "valid_to": null,
+    "modality": "fact",
+    "confidence": "high",
+    "evidence": null,
+    "quote": "about 20 kg a month"
+   },
+   {
+    "subject": "Pine and Pour",
+    "attribute": "referred by",
+    "value": "Sam Whitlock",
+    "valid_from": null,
+    "valid_to": null,
+    "modality": "fact",
+    "confidence": "high",
+    "evidence": null,
+    "quote": "The owners were referred to us by Sam Whitlock"
+   }
+  ]
+ },
+ "Clients/The Copper Kettle.md::0": {
+  "model": "hand-written",
+  "entities": [
+   {
+    "name": "The Copper Kettle",
+    "type": "Organization",
+    "aliases": [
+     "Copper Kettle"
+    ],
+    "description": "Café on Market Row; former wholesale client"
+   },
+   {
+    "name": "Fernwick Roasting Co",
+    "type": "Organization",
+    "aliases": [
+     "Fernwick"
+    ],
+    "description": "Coffee roaster"
+   },
+   {
+    "name": "Raise Harbour Blend to $28.00 per kg",
+    "type": "Decision",
+    "aliases": [],
+    "description": "September 2025 price rise"
+   },
+   {
+    "name": "Explain price rises early",
+    "type": "Lesson",
+    "aliases": [],
+    "description": "Give long notice of price rises"
+   },
+   {
+    "name": "Harbour Blend",
+    "type": "Product",
+    "aliases": [],
+    "description": "Fernwick's house espresso"
+   }
+  ],
+  "relationships": [
+   {
+    "source": "The Copper Kettle",
+    "target": "Fernwick Roasting Co",
+    "type": "CLIENT_OF",
+    "detail": "wholesale client June 2022 to October 2025",
+    "valid_from": "2022-06",
+    "valid_to": "2025-10",
+    "modality": "fact",
+    "confidence": "high"
+   },
+   {
+    "source": "Raise Harbour Blend to $28.00 per kg",
+    "target": "The Copper Kettle",
+    "type": "LED_TO",
+    "detail": "left for a cheaper roaster after the September price rise",
+    "valid_from": null,
+    "valid_to": null,
+    "modality": "fact",
+    "confidence": "high"
+   }
+  ],
+  "claims": [
+   {
+    "subject": "The Copper Kettle",
+    "attribute": "status",
+    "value": "left in October 2025 for a cheaper roaster",
+    "valid_from": null,
+    "valid_to": null,
+    "modality": "fact",
+    "confidence": "high",
+    "evidence": null,
+    "quote": "They left in October 2025 for a cheaper roaster"
+   },
+   {
+    "subject": "The Copper Kettle",
+    "attribute": "reason for leaving",
+    "value": "price; two weeks' notice",
+    "valid_from": null,
+    "valid_to": null,
+    "modality": "reported",
+    "confidence": "high",
+    "evidence": null,
+    "quote": "They said the price was the reason and that they only had two weeks' notice"
+   },
+   {
+    "subject": "Harbour Blend",
+    "attribute": "wholesale price",
+    "value": "$28.00 per kg",
+    "valid_from": "2025-09",
+    "valid_to": null,
+    "modality": "fact",
+    "confidence": "high",
+    "evidence": null,
+    "quote": "our September price rise to $28.00 per kg"
+   }
+  ]
+ },
+ "Decisions/2024-08 Replace order spreadsheet with Tallybook.md::0": {
+  "model": "hand-written",
+  "entities": [
+   {
+    "name": "Replace order spreadsheet with Tallybook",
+    "type": "Decision",
+    "aliases": [],
+    "description": "Move wholesale ordering to the Tallybook portal"
+   },
+   {
+    "name": "Tallybook order portal",
+    "type": "Product",
+    "aliases": [
+     "Tallybook"
+    ],
+    "description": "Wholesale ordering portal"
+   },
+   {
+    "name": "Order spreadsheet",
+    "type": "Product",
+    "aliases": [],
+    "description": "Shared order spreadsheet"
+   },
+   {
+    "name": "Ruth Calloway",
+    "type": "Person",
+    "aliases": [],
+    "description": "Founder"
+   },
+   {
+    "name": "Lena Fischer",
+    "type": "Person",
+    "aliases": [],
+    "description": "Finance lead"
+   },
+   {
+    "name": "Missed wholesale orders July 2024",
+    "type": "Event",
+    "aliases": [],
+    "description": "Three orders missed because spreadsheet rows were overwritten"
+   },
+   {
+    "name": "Juniper Cafe Group",
+    "type": "Organization",
+    "aliases": [
+     "Juniper"
+    ],
+    "description": "New large client"
+   }
+  ],
+  "relationships": [
+   {
+    "source": "Ruth Calloway",
+    "target": "Replace order spreadsheet with Tallybook",
+    "type": "DECIDED",
+    "detail": "decided with Lena",
+    "valid_from": null,
+    "valid_to": null,
+    "modality": "fact",
+    "confidence": "high"
+   },
+   {
+    "source": "Lena Fischer",
+    "target": "Replace order spreadsheet with Tallybook",
+    "type": "DECIDED",
+    "detail": "decided with Ruth",
+    "valid_from": null,
+    "valid_to": null,
+    "modality": "fact",
+    "confidence": "high"
+   },
+   {
+    "source": "Missed wholesale orders July 2024",
+    "target": "Replace order spreadsheet with Tallybook",
+    "type": "LED_TO",
+    "detail": "three missed orders",
+    "valid_from": null,
+    "valid_to": null,
+    "modality": "fact",
+    "confidence": "high"
+   },
+   {
+    "source": "Replace order spreadsheet with Tallybook",
+    "target": "Order spreadsheet",
+    "type": "AFFECTS",
+    "detail": "retired",
+    "valid_from": null,
+    "valid_to": null,
+    "modality": "fact",
+    "confidence": "high"
+   },
+   {
+    "source": "Replace order spreadsheet with Tallybook",
+    "target": "Tallybook order portal",
+    "type": "LED_TO",
+    "detail": "adopted by September 2024",
+    "valid_from": null,
+    "valid_to": null,
+    "modality": "fact",
+    "confidence": "high"
+   }
+  ],
+  "claims": [
+   {
+    "subject": "Missed wholesale orders July 2024",
+    "attribute": "count",
+    "value": "3",
+    "valid_from": null,
+    "valid_to": null,
+    "modality": "fact",
+    "confidence": "high",
+    "evidence": null,
+    "quote": "we missed three wholesale orders in July 2024"
+   },
+   {
+    "subject": "Lena Fischer",
+    "attribute": "time spent matching orders to invoices",
+    "value": "about a day a week",
+    "valid_from": null,
+    "valid_to": null,
+    "modality": "fact",
+    "confidence": "high",
+    "evidence": null,
+    "quote": "about a day a week matching orders to invoices"
+   }
+  ]
+ },
+ "Decisions/2024-12 Raise wholesale prices for 2025.md::0": {
+  "model": "hand-written",
+  "entities": [
+   {
+    "name": "Raise wholesale prices for 2025",
+    "type": "Decision",
+    "aliases": [],
+    "description": "Raise Harbour Blend from $24.00 to $26.50 per kg from January 2025"
+   },
+   {
+    "name": "Harbour Blend",
+    "type": "Product",
+    "aliases": [],
+    "description": "House blend"
+   },
+   {
+    "name": "Sam Patel",
+    "type": "Person",
+    "aliases": [],
+    "description": "Called the larger accounts"
+   },
+   {
+    "name": "Green coffee costs",
+    "type": "Concept",
+    "aliases": [],
+    "description": "Cost of unroasted coffee"
+   }
+  ],
+  "relationships": [
+   {
+    "source": "Raise wholesale prices for 2025",
+    "target": "Harbour Blend",
+    "type": "AFFECTS",
+    "detail": "from $24.00 to $26.50 per kg",
+    "valid_from": null,
+    "valid_to": null,
+    "modality": "fact",
+    "confidence": "high"
+   },
+   {
+    "source": "Green coffee costs",
+    "target": "Raise wholesale prices for 2025",
+    "type": "LED_TO",
+    "detail": "rose 22% year on year in 2024",
+    "valid_from": null,
+    "valid_to": null,
+    "modality": "fact",
+    "confidence": "high"
+   }
+  ],
+  "claims": [
+   {
+    "subject": "Harbour Blend",
+    "attribute": "wholesale price",
+    "value": "$26.50 per kg",
+    "valid_from": "2025-01-06",
+    "valid_to": null,
+    "modality": "plan",
+    "confidence": "high",
+    "evidence": null,
+    "quote": "raise [[Harbour Blend]] from $24.00 to $26.50 per kg from 6 January 2025"
+   },
+   {
+    "subject": "Green coffee costs",
+    "attribute": "change in 2024",
+    "value": "+22% year on year",
+    "valid_from": null,
+    "valid_to": null,
+    "modality": "fact",
+    "confidence": "high",
+    "evidence": null,
+    "quote": "our green coffee costs rose 22% year on year in 2024"
+   },
+   {
+    "subject": "Raise wholesale prices for 2025",
+    "attribute": "notice given",
+    "value": "five weeks",
+    "valid_from": null,
+    "valid_to": null,
+    "modality": "fact",
+    "confidence": "high",
+    "evidence": null,
+    "quote": "a letter to every wholesale client on 2 December, five weeks ahead"
+   },
+   {
+    "subject": "Raise wholesale prices for 2025",
+    "attribute": "accounts lost",
+    "value": "0",
+    "valid_from": null,
+    "valid_to": null,
+    "modality": "fact",
+    "confidence": "high",
+    "evidence": null,
+    "quote": "No accounts left because of it"
+   }
+  ]
+ },
+ "Decisions/2025-06 Switch green coffee supplier.md::0": {
+  "model": "hand-written",
+  "entities": [
+   {
+    "name": "Switch green coffee supplier to Cooperativa Rio Claro",
+    "type": "Decision",
+    "aliases": [],
+    "description": "Move main green coffee volume from Alta Verde to Rio Claro from July 2025"
+   },
+   {
+    "name": "Alta Verde Importers",
+    "type": "Organization",
+    "aliases": [
+     "Alta Verde"
+    ],
+    "description": "Previous main importer"
+   },
+   {
+    "name": "Cooperativa Rio Claro",
+    "type": "Organization",
+    "aliases": [
+     "Rio Claro"
+    ],
+    "description": "Direct-trade cooperative"
+   },
+   {
+    "name": "Ruth Calloway",
+    "type": "Person",
+    "aliases": [],
+    "description": "Founder"
+   },
+   {
+    "name": "Daniel Reyes",
+    "type": "Person",
+    "aliases": [],
+    "description": "Head roaster who ran the cupping"
+   },
+   {
+    "name": "Harbour Blend",
+    "type": "Product",
+    "aliases": [],
+    "description": "House blend"
+   },
+   {
+    "name": "Late Alta Verde shipments 2025",
+    "type": "Event",
+    "aliases": [],
+    "description": "Shipments late in April and May 2025, causing a four-day stockout"
+   },
+   {
+    "name": "Raise Harbour Blend to $28.00 per kg",
+    "type": "Decision",
+    "aliases": [],
+    "description": "September 2025 price review"
+   },
+   {
+    "name": "Fernwick Roasting Co",
+    "type": "Organization",
+    "aliases": [],
+    "description": "Coffee roaster whose working notes this vault holds"
+   }
+  ],
+  "relationships": [
+   {
+    "source": "Ruth Calloway",
+    "target": "Switch green coffee supplier to Cooperativa Rio Claro",
+    "type": "DECIDED",
+    "detail": "16 June 2025",
+    "valid_from": "2025-06-16",
+    "valid_to": null,
+    "modality": "fact",
+    "confidence": "high"
+   },
+   {
+    "source": "Daniel Reyes",
+    "target": "Switch green coffee supplier to Cooperativa Rio Claro",
+    "type": "DECIDED",
+    "detail": "16 June 2025",
+    "valid_from": "2025-06-16",
+    "valid_to": null,
+    "modality": "fact",
+    "confidence": "high"
+   },
+   {
+    "source": "Late Alta Verde shipments 2025",
+    "target": "Switch green coffee supplier to Cooperativa Rio Claro",
+    "type": "LED_TO",
+    "detail": "late shipments and a stockout",
+    "valid_from": null,
+    "valid_to": null,
+    "modality": "fact",
+    "confidence": "high"
+   },
+   {
+    "source": "Switch green coffee supplier to Cooperativa Rio Claro",
+    "target": "Alta Verde Importers",
+    "type": "AFFECTS",
+    "detail": "main volume moved away",
+    "valid_from": null,
+    "valid_to": null,
+    "modality": "fact",
+    "confidence": "high"
+   },
+   {
+    "source": "Switch green coffee supplier to Cooperativa Rio Claro",
+    "target": "Harbour Blend",
+    "type": "AFFECTS",
+    "detail": "new Colombian component",
+    "valid_from": null,
+    "valid_to": null,
+    "modality": "fact",
+    "confidence": "high"
+   },
+   {
+    "source": "Switch green coffee supplier to Cooperativa Rio Claro",
+    "target": "Raise Harbour Blend to $28.00 per kg",
+    "type": "LED_TO",
+    "detail": "wholesale price review for September",
+    "valid_from": null,
+    "valid_to": null,
+    "modality": "fact",
+    "confidence": "high"
+   },
+   {
+    "source": "Cooperativa Rio Claro",
+    "target": "Alta Verde Importers",
+    "type": "REPLACED",
+    "detail": "main green coffee supplier",
+    "valid_from": "2025-07",
+    "valid_to": null,
+    "modality": "fact",
+    "confidence": "high"
+   }
+  ],
+  "claims": [
+   {
+    "subject": "Fernwick Roasting Co",
+    "attribute": "main green coffee supplier",
+    "value": "Cooperativa Rio Claro",
+    "valid_from": "2025-07",
+    "valid_to": null,
+    "modality": "plan",
+    "confidence": "high",
+    "evidence": null,
+    "quote": "buying direct from [[Cooperativa Rio Claro]], starting with a first container in July 2025"
+   },
+   {
+    "subject": "Harbour Blend",
+    "attribute": "stockout May 2025",
+    "value": "four days",
+    "valid_from": null,
+    "valid_to": null,
+    "modality": "fact",
+    "confidence": "high",
+    "evidence": null,
+    "quote": "was out of stock for four days in May"
+   },
+   {
+    "subject": "Alta Verde Importers",
+    "attribute": "price increase",
+    "value": "18% for the second half of 2025",
+    "valid_from": null,
+    "valid_to": null,
+    "modality": "reported",
+    "confidence": "high",
+    "evidence": null,
+    "quote": "Alta Verde announced an 18% price increase for the second half of 2025"
+   },
+   {
+    "subject": "Cooperativa Rio Claro",
+    "attribute": "cupping score",
+    "value": "86 points (vs 83 for Alta Verde)",
+    "valid_from": null,
+    "valid_to": null,
+    "modality": "fact",
+    "confidence": "high",
+    "evidence": null,
+    "quote": "the Rio Claro washed lot scored 86 points against 83"
+   },
+   {
+    "subject": "Cooperativa Rio Claro",
+    "attribute": "landed cost vs Alta Verde",
+    "value": "about 9% more per kg",
+    "valid_from": null,
+    "valid_to": null,
+    "modality": "fact",
+    "confidence": "high",
+    "evidence": null,
+    "quote": "about 9% more per kg landed than Alta Verde did"
+   }
+  ]
+ },
+ "Decisions/2025-08 Raise Harbour Blend to 28 per kg.md::0": {
+  "model": "hand-written",
+  "entities": [
+   {
+    "name": "Raise Harbour Blend to $28.00 per kg",
+    "type": "Decision",
+    "aliases": [],
+    "description": "Harbour Blend from $26.50 to $28.00 per kg from 1 September 2025"
+   },
+   {
+    "name": "Harbour Blend",
+    "type": "Product",
+    "aliases": [],
+    "description": "House blend"
+   },
+   {
+    "name": "Cooperativa Rio Claro",
+    "type": "Organization",
+    "aliases": [
+     "Rio Claro"
+    ],
+    "description": "Direct-trade supplier"
+   },
+   {
+    "name": "Switch green coffee supplier to Cooperativa Rio Claro",
+    "type": "Decision",
+    "aliases": [],
+    "description": "Supplier switch that raised costs"
+   }
+  ],
+  "relationships": [
+   {
+    "source": "Raise Harbour Blend to $28.00 per kg",
+    "target": "Harbour Blend",
+    "type": "AFFECTS",
+    "detail": "from $26.50 to $28.00 per kg",
+    "valid_from": null,
+    "valid_to": null,
+    "modality": "fact",
+    "confidence": "high"
+   },
+   {
+    "source": "Switch green coffee supplier to Cooperativa Rio Claro",
+    "target": "Raise Harbour Blend to $28.00 per kg",
+    "type": "LED_TO",
+    "detail": "landed cost up about 9% per kg",
+    "valid_from": null,
+    "valid_to": null,
+    "modality": "fact",
+    "confidence": "high"
+   }
+  ],
+  "claims": [
+   {
+    "subject": "Harbour Blend",
+    "attribute": "wholesale price",
+    "value": "$28.00 per kg",
+    "valid_from": "2025-09-01",
+    "valid_to": null,
+    "modality": "plan",
+    "confidence": "high",
+    "evidence": null,
+    "quote": "goes from $26.50 to $28.00 per kg from 1 September 2025"
+   },
+   {
+    "subject": "Raise Harbour Blend to $28.00 per kg",
+    "attribute": "notice given",
+    "value": "two weeks",
+    "valid_from": null,
+    "valid_to": null,
+    "modality": "fact",
+    "confidence": "high",
+    "evidence": null,
+    "quote": "an email to clients on 18 August, two weeks ahead"
+   },
+   {
+    "subject": "Raise Harbour Blend to $28.00 per kg",
+    "attribute": "reason",
+    "value": "landed coffee cost up about 9% per kg after the move to Rio Claro",
+    "valid_from": null,
+    "valid_to": null,
+    "modality": "fact",
+    "confidence": "high",
+    "evidence": null,
+    "quote": "raised our landed coffee cost by about 9% per kg"
+   }
+  ]
+ },
+ "Decisions/2026-01 Shelve Millbrook roastery.md::0": {
+  "model": "hand-written",
+  "entities": [
+   {
+    "name": "Shelve Millbrook roastery",
+    "type": "Decision",
+    "aliases": [],
+    "description": "Not opening the Millbrook second roastery; lease a 15 kg roaster instead"
+   },
+   {
+    "name": "Millbrook roastery",
+    "type": "Project",
+    "aliases": [
+     "second roastery"
+    ],
+    "description": "Planned second roastery in Millbrook"
+   },
+   {
+    "name": "15 kg roaster",
+    "type": "Product",
+    "aliases": [],
+    "description": "Leased roaster for Quay Street"
+   },
+   {
+    "name": "2026-01-20 Board meeting Q4 2025",
+    "type": "Event",
+    "aliases": [],
+    "description": "Board meeting where it was agreed"
+   },
+   {
+    "name": "2025 Plan",
+    "type": "Document",
+    "aliases": [],
+    "description": "Plan with the $250,000 budget"
+   }
+  ],
+  "relationships": [
+   {
+    "source": "Shelve Millbrook roastery",
+    "target": "Millbrook roastery",
+    "type": "AFFECTS",
+    "detail": "will not open",
+    "valid_from": null,
+    "valid_to": null,
+    "modality": "fact",
+    "confidence": "high"
+   },
+   {
+    "source": "Shelve Millbrook roastery",
+    "target": "15 kg roaster",
+    "type": "LED_TO",
+    "detail": "five-year lease, installation May 2026",
+    "valid_from": null,
+    "valid_to": null,
+    "modality": "fact",
+    "confidence": "high"
+   },
+   {
+    "source": "Shelve Millbrook roastery",
+    "target": "2026-01-20 Board meeting Q4 2025",
+    "type": "EVIDENCED_BY",
+    "detail": "agreed at the board",
+    "valid_from": null,
+    "valid_to": null,
+    "modality": "fact",
+    "confidence": "high"
+   }
+  ],
+  "claims": [
+   {
+    "subject": "Millbrook roastery",
+    "attribute": "status",
+    "value": "shelved",
+    "valid_from": null,
+    "valid_to": null,
+    "modality": "fact",
+    "confidence": "high",
+    "evidence": null,
+    "quote": "we will not open the second roastery in Millbrook"
+   },
+   {
+    "subject": "Millbrook roastery",
+    "attribute": "fit-out quote",
+    "value": "$410,000",
+    "valid_from": null,
+    "valid_to": null,
+    "modality": "fact",
+    "confidence": "high",
+    "evidence": null,
+    "quote": "The fit-out quote for the Millbrook site came in at $410,000"
+   },
+   {
+    "subject": "Millbrook roastery",
+    "attribute": "budget",
+    "value": "$250,000",
+    "valid_from": null,
+    "valid_to": null,
+    "modality": "fact",
+    "confidence": "high",
+    "evidence": null,
+    "quote": "the $250,000 we had budgeted"
+   },
+   {
+    "subject": "Millbrook roastery",
+    "attribute": "bank loan offered",
+    "value": "$150,000",
+    "valid_from": null,
+    "valid_to": null,
+    "modality": "fact",
+    "confidence": "high",
+    "evidence": null,
+    "quote": "The bank offered a loan of only $150,000"
+   },
+   {
+    "subject": "15 kg roaster",
+    "attribute": "lease",
+    "value": "five years at $2,100 a month",
+    "valid_from": null,
+    "valid_to": null,
+    "modality": "plan",
+    "confidence": "high",
+    "evidence": null,
+    "quote": "five-year lease at $2,100 a month"
+   }
+  ]
+ },
+ "Events/2025 Port Alder Regional Roasting Cup.md::0": {
+  "model": "hand-written",
+  "entities": [
+   {
+    "name": "2025 Port Alder Regional Roasting Cup",
+    "type": "Event",
+    "aliases": [],
+    "description": "Regional roasting competition on 25 October 2025"
+   },
+   {
+    "name": "Daniel Reyes",
+    "type": "Person",
+    "aliases": [],
+    "description": "Fernwick head roaster"
+   },
+   {
+    "name": "Fernwick Roasting Co",
+    "type": "Organization",
+    "aliases": [
+     "Fernwick"
+    ],
+    "description": "Coffee roaster"
+   },
+   {
+    "name": "Cooperativa Rio Claro",
+    "type": "Organization",
+    "aliases": [
+     "Rio Claro"
+    ],
+    "description": "Grower of the natural Caturra"
+   },
+   {
+    "name": "Rio Claro natural Caturra",
+    "type": "Product",
+    "aliases": [],
+    "description": "Natural Caturra roasted for the competition"
+   }
+  ],
+  "relationships": [
+   {
+    "source": "Daniel Reyes",
+    "target": "2025 Port Alder Regional Roasting Cup",
+    "type": "RECEIVED",
+    "detail": "second place in the espresso category",
+    "valid_from": "2025-10-25",
+    "valid_to": null,
+    "modality": "fact",
+    "confidence": "high"
+   },
+   {
+    "source": "Daniel Reyes",
+    "target": "Rio Claro natural Caturra",
+    "type": "USES",
+    "detail": "roasted for the competition",
+    "valid_from": null,
+    "valid_to": null,
+    "modality": "fact",
+    "confidence": "high"
+   },
+   {
+    "source": "Cooperativa Rio Claro",
+    "target": "Rio Claro natural Caturra",
+    "type": "SUPPLIER_TO",
+    "detail": "grower",
+    "valid_from": null,
+    "valid_to": null,
+    "modality": "fact",
+    "confidence": "high"
+   }
+  ],
+  "claims": [
+   {
+    "subject": "2025 Port Alder Regional Roasting Cup",
+    "attribute": "entrants",
+    "value": "14 roasters",
+    "valid_from": null,
+    "valid_to": null,
+    "modality": "fact",
+    "confidence": "high",
+    "evidence": null,
+    "quote": "with 14 roasters entered"
+   },
+   {
+    "subject": "Daniel Reyes",
+    "attribute": "roasting cup result",
+    "value": "second place in espresso",
+    "valid_from": null,
+    "valid_to": null,
+    "modality": "fact",
+    "confidence": "high",
+    "evidence": null,
+    "quote": "placed second in the espresso category"
+   }
+  ]
+ },
+ "Funding/Port Alder Small Business Fund grant.md::0": {
+  "model": "hand-written",
+  "entities": [
+   {
+    "name": "Port Alder Small Business Fund grant",
+    "type": "Document",
+    "aliases": [],
+    "description": "$15,000 grant for the afterburner"
+   },
+   {
+    "name": "Port Alder Small Business Fund",
+    "type": "Organization",
+    "aliases": [],
+    "description": "Local fund that awarded the grant"
+   },
+   {
+    "name": "Fernwick Roasting Co",
+    "type": "Organization",
+    "aliases": [
+     "Fernwick"
+    ],
+    "description": "Coffee roaster"
+   },
+   {
+    "name": "Afterburner",
+    "type": "Product",
+    "aliases": [],
+    "description": "Fitted to the roaster"
+   },
+   {
+    "name": "Lena Fischer",
+    "type": "Person",
+    "aliases": [],
+    "description": "Wrote most of the application"
+   }
+  ],
+  "relationships": [
+   {
+    "source": "Fernwick Roasting Co",
+    "target": "Port Alder Small Business Fund",
+    "type": "RECEIVED",
+    "detail": "$15,000 grant awarded 2 October 2025",
+    "valid_from": "2025-10-02",
+    "valid_to": null,
+    "modality": "fact",
+    "confidence": "high"
+   },
+   {
+    "source": "Lena Fischer",
+    "target": "Port Alder Small Business Fund grant",
+    "type": "AUTHORED",
+    "detail": "wrote most of the application",
+    "valid_from": null,
+    "valid_to": null,
+    "modality": "fact",
+    "confidence": "high"
+   },
+   {
+    "source": "Port Alder Small Business Fund grant",
+    "target": "Afterburner",
+    "type": "COVERS",
+    "detail": "to fit an afterburner",
+    "valid_from": null,
+    "valid_to": null,
+    "modality": "fact",
+    "confidence": "high"
+   }
+  ],
+  "claims": [
+   {
+    "subject": "Port Alder Small Business Fund grant",
+    "attribute": "amount",
+    "value": "$15,000",
+    "valid_from": null,
+    "valid_to": null,
+    "modality": "fact",
+    "confidence": "high",
+    "evidence": null,
+    "quote": "Grant of $15,000 from the Port Alder Small Business Fund"
+   },
+   {
+    "subject": "Port Alder Small Business Fund grant",
+    "attribute": "awarded",
+    "value": "2 October 2025",
+    "valid_from": "2025-10-02",
+    "valid_to": null,
+    "modality": "fact",
+    "confidence": "high",
+    "evidence": null,
+    "quote": "awarded on 2 October 2025"
+   },
+   {
+    "subject": "Port Alder Small Business Fund grant",
+    "attribute": "purpose",
+    "value": "fit an afterburner to the roaster",
+    "valid_from": null,
+    "valid_to": null,
+    "modality": "fact",
+    "confidence": "high",
+    "evidence": null,
+    "quote": "to fit an afterburner to the roaster"
+   }
+  ]
+ },
+ "Home.md::0": {
+  "model": "hand-written",
+  "entities": [
+   {
+    "name": "Fernwick Roasting Co",
+    "type": "Organization",
+    "aliases": [
+     "Fernwick"
+    ],
+    "description": "Coffee roaster whose working notes this vault holds"
+   },
+   {
+    "name": "Ruth Calloway",
+    "type": "Person",
+    "aliases": [],
+    "description": "Keeps the notes of Fernwick Roasting Co"
+   }
+  ],
+  "relationships": [],
+  "claims": []
+ },
+ "Journal/2024-02-05.md::0": {
+  "model": "hand-written",
+  "entities": [
+   {
+    "name": "Lena Fischer",
+    "type": "Person",
+    "aliases": [],
+    "description": "Finance lead who started on 5 February 2024"
+   },
+   {
+    "name": "Order spreadsheet",
+    "type": "Product",
+    "aliases": [],
+    "description": "Shared order spreadsheet"
+   },
+   {
+    "name": "Fernwick Roasting Co",
+    "type": "Organization",
+    "aliases": [
+     "Fernwick"
+    ],
+    "description": "Coffee roaster"
+   }
+  ],
+  "relationships": [
+   {
+    "source": "Lena Fischer",
+    "target": "Fernwick Roasting Co",
+    "type": "ROLE_AT",
+    "detail": "started today",
+    "valid_from": "2024-02-05",
+    "valid_to": null,
+    "modality": "fact",
+    "confidence": "high"
+   }
+  ],
+  "claims": [
+   {
+    "subject": "Fernwick Roasting Co",
+    "attribute": "wholesale accounts",
+    "value": "11",
+    "valid_from": null,
+    "valid_to": null,
+    "modality": "fact",
+    "confidence": "high",
+    "evidence": null,
+    "quote": "We are at 11 wholesale accounts"
+   }
+  ]
+ },
+ "Journal/2024-07-22.md::0": {
+  "model": "hand-written",
+  "entities": [
+   {
+    "name": "Juniper Cafe Group",
+    "type": "Organization",
+    "aliases": [
+     "Juniper"
+    ],
+    "description": "Café group client"
+   },
+   {
+    "name": "Maya Okafor",
+    "type": "Person",
+    "aliases": [],
+    "description": "Head roaster"
+   },
+   {
+    "name": "Missed wholesale orders July 2024",
+    "type": "Event",
+    "aliases": [],
+    "description": "Orders missed because spreadsheet rows were overwritten"
+   },
+   {
+    "name": "Order spreadsheet",
+    "type": "Product",
+    "aliases": [],
+    "description": "Shared order spreadsheet"
+   }
+  ],
+  "relationships": [
+   {
+    "source": "Missed wholesale orders July 2024",
+    "target": "Order spreadsheet",
+    "type": "RELATED_TO",
+    "detail": "rows overwritten",
+    "valid_from": null,
+    "valid_to": null,
+    "modality": "fact",
+    "confidence": "high"
+   }
+  ],
+  "claims": [
+   {
+    "subject": "Juniper Cafe Group",
+    "attribute": "first full order",
+    "value": "120 kg",
+    "valid_from": null,
+    "valid_to": null,
+    "modality": "fact",
+    "confidence": "high",
+    "evidence": null,
+    "quote": "First full order from [[Juniper Cafe Group]] after the trial: 120 kg"
+   },
+   {
+    "subject": "Missed wholesale orders July 2024",
+    "attribute": "count",
+    "value": "3",
+    "valid_from": null,
+    "valid_to": null,
+    "modality": "fact",
+    "confidence": "high",
+    "evidence": null,
+    "quote": "We missed three orders this month"
+   }
+  ]
+ },
+ "Journal/2024-11-04.md::0": {
+  "model": "hand-written",
+  "entities": [
+   {
+    "name": "Fernwick at Home",
+    "type": "Product",
+    "aliases": [],
+    "description": "Subscription that launched on 4 November 2024"
+   }
+  ],
+  "relationships": [],
+  "claims": [
+   {
+    "subject": "Fernwick at Home",
+    "attribute": "launch date",
+    "value": "4 November 2024",
+    "valid_from": "2024-11-04",
+    "valid_to": null,
+    "modality": "fact",
+    "confidence": "high",
+    "evidence": null,
+    "quote": "went live this morning"
+   },
+   {
+    "subject": "Fernwick at Home",
+    "attribute": "first-day sign-ups",
+    "value": "64",
+    "valid_from": null,
+    "valid_to": null,
+    "modality": "fact",
+    "confidence": "high",
+    "evidence": null,
+    "quote": "64 sign-ups on the first day"
+   }
+  ]
+ },
+ "Journal/2025-05-19.md::0": {
+  "model": "hand-written",
+  "entities": [
+   {
+    "name": "Alta Verde Importers",
+    "type": "Organization",
+    "aliases": [
+     "Alta Verde"
+    ],
+    "description": "Importer whose May shipment was late"
+   },
+   {
+    "name": "Harbour Blend",
+    "type": "Product",
+    "aliases": [],
+    "description": "House blend"
+   },
+   {
+    "name": "Late Alta Verde shipments 2025",
+    "type": "Event",
+    "aliases": [],
+    "description": "Late shipments in 2025"
+   },
+   {
+    "name": "Ruth Calloway",
+    "type": "Person",
+    "aliases": [],
+    "description": "Note author"
+   }
+  ],
+  "relationships": [
+   {
+    "source": "Late Alta Verde shipments 2025",
+    "target": "Harbour Blend",
+    "type": "AFFECTS",
+    "detail": "out of stock for four days",
+    "valid_from": null,
+    "valid_to": null,
+    "modality": "fact",
+    "confidence": "high"
+   }
+  ],
+  "claims": [
+   {
+    "subject": "Alta Verde Importers",
+    "attribute": "May 2025 shipment delay",
+    "value": "eleven days",
+    "valid_from": null,
+    "valid_to": null,
+    "modality": "fact",
+    "confidence": "high",
+    "evidence": null,
+    "quote": "the May shipment came eleven days after the date they gave us"
+   },
+   {
+    "subject": "Harbour Blend",
+    "attribute": "stockout May 2025",
+    "value": "four days",
+    "valid_from": null,
+    "valid_to": null,
+    "modality": "fact",
+    "confidence": "high",
+    "evidence": null,
+    "quote": "out of stock for four days"
+   },
+   {
+    "subject": "Ruth Calloway",
+    "attribute": "view on suppliers",
+    "value": "need a second supplier",
+    "valid_from": null,
+    "valid_to": null,
+    "modality": "opinion",
+    "confidence": "high",
+    "evidence": null,
+    "quote": "I think we need a second supplier"
+   }
+  ]
+ },
+ "Journal/2025-08-25.md::0": {
+  "model": "hand-written",
+  "entities": [
+   {
+    "name": "Canned cold brew",
+    "type": "Product",
+    "aliases": [],
+    "description": "Cold brew in cans suggested by a chatbot; not pursued"
+   },
+   {
+    "name": "Harbour Blend",
+    "type": "Product",
+    "aliases": [],
+    "description": "House blend"
+   },
+   {
+    "name": "Ruth Calloway",
+    "type": "Person",
+    "aliases": [],
+    "description": "Note author"
+   },
+   {
+    "name": "Decide not to launch canned cold brew",
+    "type": "Decision",
+    "aliases": [],
+    "description": "No canning line, chiller space or sales capacity"
+   }
+  ],
+  "relationships": [
+   {
+    "source": "Ruth Calloway",
+    "target": "Decide not to launch canned cold brew",
+    "type": "DECIDED",
+    "detail": "decided not to do it",
+    "valid_from": "2025-08-25",
+    "valid_to": null,
+    "modality": "fact",
+    "confidence": "high"
+   },
+   {
+    "source": "Decide not to launch canned cold brew",
+    "target": "Canned cold brew",
+    "type": "AFFECTS",
+    "detail": "not launched",
+    "valid_from": null,
+    "valid_to": null,
+    "modality": "fact",
+    "confidence": "high"
+   }
+  ],
+  "claims": [
+   {
+    "subject": "Canned cold brew",
+    "attribute": "status",
+    "value": "not pursued",
+    "valid_from": null,
+    "valid_to": null,
+    "modality": "fact",
+    "confidence": "high",
+    "evidence": null,
+    "quote": "I decided not to do it"
+   },
+   {
+    "subject": "Harbour Blend",
+    "attribute": "wholesale price",
+    "value": "$28.00 per kg",
+    "valid_from": null,
+    "valid_to": null,
+    "modality": "plan",
+    "confidence": "high",
+    "evidence": null,
+    "quote": "we are going to $28.00 in September"
+   },
+   {
+    "subject": "Harbour Blend",
+    "attribute": "view on $32 price",
+    "value": "too far",
+    "valid_from": null,
+    "valid_to": null,
+    "modality": "opinion",
+    "confidence": "high",
+    "evidence": null,
+    "quote": "The $32 price is also too far"
+   }
+  ]
+ },
+ "Journal/2025-10-27.md::0": {
+  "model": "hand-written",
+  "entities": [
+   {
+    "name": "Daniel Reyes",
+    "type": "Person",
+    "aliases": [],
+    "description": "Head roaster"
+   },
+   {
+    "name": "2025 Port Alder Regional Roasting Cup",
+    "type": "Event",
+    "aliases": [],
+    "description": "Regional roasting competition"
+   },
+   {
+    "name": "Rio Claro natural Caturra",
+    "type": "Product",
+    "aliases": [],
+    "description": "Natural Caturra from Cooperativa Rio Claro"
+   },
+   {
+    "name": "Switch green coffee supplier to Cooperativa Rio Claro",
+    "type": "Decision",
+    "aliases": [],
+    "description": "Supplier switch"
+   }
+  ],
+  "relationships": [
+   {
+    "source": "Daniel Reyes",
+    "target": "2025 Port Alder Regional Roasting Cup",
+    "type": "RECEIVED",
+    "detail": "came second with the Rio Claro natural Caturra",
+    "valid_from": null,
+    "valid_to": null,
+    "modality": "fact",
+    "confidence": "high"
+   },
+   {
+    "source": "Switch green coffee supplier to Cooperativa Rio Claro",
+    "target": "2025 Port Alder Regional Roasting Cup",
+    "type": "EVIDENCED_BY",
+    "detail": "proof the switch was worth it",
+    "valid_from": null,
+    "valid_to": null,
+    "modality": "opinion",
+    "confidence": "high"
+   }
+  ],
+  "claims": [
+   {
+    "subject": "Daniel Reyes",
+    "attribute": "roasting cup result",
+    "value": "second place",
+    "valid_from": null,
+    "valid_to": null,
+    "modality": "fact",
+    "confidence": "high",
+    "evidence": null,
+    "quote": "came second at the [[2025 Port Alder Regional Roasting Cup]]"
+   }
+  ]
+ },
+ "Journal/2025-11-17.md::0": {
+  "model": "hand-written",
+  "entities": [
+   {
+    "name": "The Copper Kettle",
+    "type": "Organization",
+    "aliases": [
+     "Copper Kettle"
+    ],
+    "description": "Lost client"
+   },
+   {
+    "name": "Explain price rises early",
+    "type": "Lesson",
+    "aliases": [],
+    "description": "Notice made the difference"
+   },
+   {
+    "name": "Raise wholesale prices for 2025",
+    "type": "Decision",
+    "aliases": [],
+    "description": "January 2025 price rise"
+   },
+   {
+    "name": "Raise Harbour Blend to $28.00 per kg",
+    "type": "Decision",
+    "aliases": [],
+    "description": "September 2025 price rise"
+   }
+  ],
+  "relationships": [
+   {
+    "source": "Explain price rises early",
+    "target": "Raise Harbour Blend to $28.00 per kg",
+    "type": "LEARNED_FROM",
+    "detail": "two weeks' notice lost a client",
+    "valid_from": null,
+    "valid_to": null,
+    "modality": "fact",
+    "confidence": "high"
+   },
+   {
+    "source": "Explain price rises early",
+    "target": "Raise wholesale prices for 2025",
+    "type": "LEARNED_FROM",
+    "detail": "five weeks' notice lost nobody",
+    "valid_from": null,
+    "valid_to": null,
+    "modality": "fact",
+    "confidence": "high"
+   }
+  ],
+  "claims": [
+   {
+    "subject": "Raise wholesale prices for 2025",
+    "attribute": "notice given",
+    "value": "five weeks",
+    "valid_from": null,
+    "valid_to": null,
+    "modality": "fact",
+    "confidence": "high",
+    "evidence": null,
+    "quote": "In January we gave five weeks' notice and lost nobody"
+   },
+   {
+    "subject": "Raise Harbour Blend to $28.00 per kg",
+    "attribute": "notice given",
+    "value": "two weeks",
+    "valid_from": null,
+    "valid_to": null,
+    "modality": "fact",
+    "confidence": "high",
+    "evidence": null,
+    "quote": "in August we gave two weeks and lost them"
+   }
+  ]
+ },
+ "Journal/2026-03-30.md::0": {
+  "model": "hand-written",
+  "entities": [
+   {
+    "name": "Fernwick Roasting Co",
+    "type": "Organization",
+    "aliases": [
+     "Fernwick"
+    ],
+    "description": "Coffee roaster"
+   },
+   {
+    "name": "Fernwick at Home",
+    "type": "Product",
+    "aliases": [],
+    "description": "Subscription"
+   },
+   {
+    "name": "15 kg roaster",
+    "type": "Product",
+    "aliases": [],
+    "description": "Leased roaster"
+   },
+   {
+    "name": "Millbrook roastery",
+    "type": "Project",
+    "aliases": [
+     "second roastery"
+    ],
+    "description": "Shelved second roastery"
+   }
+  ],
+  "relationships": [],
+  "claims": [
+   {
+    "subject": "Fernwick Roasting Co",
+    "attribute": "wholesale accounts",
+    "value": "26",
+    "valid_from": null,
+    "valid_to": null,
+    "modality": "fact",
+    "confidence": "high",
+    "evidence": null,
+    "quote": "26 wholesale accounts"
+   },
+   {
+    "subject": "Fernwick at Home",
+    "attribute": "subscribers",
+    "value": "540",
+    "valid_from": null,
+    "valid_to": null,
+    "modality": "fact",
+    "confidence": "high",
+    "evidence": null,
+    "quote": "540 [[Fernwick at Home]] subscribers"
+   },
+   {
+    "subject": "15 kg roaster",
+    "attribute": "installation",
+    "value": "May 2026",
+    "valid_from": null,
+    "valid_to": null,
+    "modality": "plan",
+    "confidence": "high",
+    "evidence": null,
+    "quote": "the installer is booked for May"
+   },
+   {
+    "subject": "Millbrook roastery",
+    "attribute": "view on shelving",
+    "value": "still feels right",
+    "valid_from": null,
+    "valid_to": null,
+    "modality": "opinion",
+    "confidence": "high",
+    "evidence": null,
+    "quote": "Shelving Millbrook still feels right"
+   }
+  ]
+ },
+ "Lessons/Explain price rises early.md::0": {
+  "model": "hand-written",
+  "entities": [
+   {
+    "name": "Explain price rises early",
+    "type": "Lesson",
+    "aliases": [],
+    "description": "Five weeks' notice, reasons in numbers, a call to big accounts"
+   },
+   {
+    "name": "The Copper Kettle",
+    "type": "Organization",
+    "aliases": [
+     "Copper Kettle"
+    ],
+    "description": "Client lost after short notice"
+   },
+   {
+    "name": "Raise wholesale prices for 2025",
+    "type": "Decision",
+    "aliases": [],
+    "description": "January 2025 rise"
+   },
+   {
+    "name": "Raise Harbour Blend to $28.00 per kg",
+    "type": "Decision",
+    "aliases": [],
+    "description": "September 2025 rise"
+   }
+  ],
+  "relationships": [
+   {
+    "source": "Explain price rises early",
+    "target": "Raise wholesale prices for 2025",
+    "type": "LEARNED_FROM",
+    "detail": "five weeks' notice, no accounts left",
+    "valid_from": null,
+    "valid_to": null,
+    "modality": "fact",
+    "confidence": "high"
+   },
+   {
+    "source": "Explain price rises early",
+    "target": "Raise Harbour Blend to $28.00 per kg",
+    "type": "LEARNED_FROM",
+    "detail": "two weeks' notice, The Copper Kettle left",
+    "valid_from": null,
+    "valid_to": null,
+    "modality": "fact",
+    "confidence": "high"
+   },
+   {
+    "source": "Raise Harbour Blend to $28.00 per kg",
+    "target": "The Copper Kettle",
+    "type": "LED_TO",
+    "detail": "left after the rise",
+    "valid_from": null,
+    "valid_to": null,
+    "modality": "fact",
+    "confidence": "high"
+   }
+  ],
+  "claims": [
+   {
+    "subject": "Explain price rises early",
+    "attribute": "rule",
+    "value": "at least five weeks' notice, reasons in numbers, call accounts over 20 kg a month",
+    "valid_from": null,
+    "valid_to": null,
+    "modality": "plan",
+    "confidence": "high",
+    "evidence": null,
+    "quote": "at least five weeks' notice, the reasons in numbers, and a call to every account over 20 kg a month"
+   }
+  ]
+ },
+ "Lessons/Never depend on one importer.md::0": {
+  "model": "hand-written",
+  "entities": [
+   {
+    "name": "Never depend on one importer",
+    "type": "Lesson",
+    "aliases": [],
+    "description": "Keep two sources for every blend component and four weeks of stock"
+   },
+   {
+    "name": "Alta Verde Importers",
+    "type": "Organization",
+    "aliases": [
+     "Alta Verde"
+    ],
+    "description": "Importer whose delays taught the lesson"
+   },
+   {
+    "name": "Late Alta Verde shipments 2025",
+    "type": "Event",
+    "aliases": [],
+    "description": "Late shipments in 2025"
+   },
+   {
+    "name": "Harbour Blend",
+    "type": "Product",
+    "aliases": [],
+    "description": "House blend"
+   },
+   {
+    "name": "Switch green coffee supplier to Cooperativa Rio Claro",
+    "type": "Decision",
+    "aliases": [],
+    "description": "Supplier switch"
+   },
+   {
+    "name": "Fernwick Roasting Co",
+    "type": "Organization",
+    "aliases": [],
+    "description": "Coffee roaster whose working notes this vault holds"
+   }
+  ],
+  "relationships": [
+   {
+    "source": "Never depend on one importer",
+    "target": "Late Alta Verde shipments 2025",
+    "type": "LEARNED_FROM",
+    "detail": "one late container caused a four-day stockout",
+    "valid_from": null,
+    "valid_to": null,
+    "modality": "fact",
+    "confidence": "high"
+   },
+   {
+    "source": "Never depend on one importer",
+    "target": "Switch green coffee supplier to Cooperativa Rio Claro",
+    "type": "LEARNED_FROM",
+    "detail": "see the decision",
+    "valid_from": null,
+    "valid_to": null,
+    "modality": "fact",
+    "confidence": "high"
+   }
+  ],
+  "claims": [
+   {
+    "subject": "Fernwick Roasting Co",
+    "attribute": "green coffee stock rule",
+    "value": "four weeks",
+    "valid_from": null,
+    "valid_to": null,
+    "modality": "plan",
+    "confidence": "high",
+    "evidence": null,
+    "quote": "hold four weeks of green coffee stock"
+   }
+  ]
+ },
+ "Meetings/2024-04-09 Call with Priya Nandakumar.md::0": {
+  "model": "hand-written",
+  "entities": [
+   {
+    "name": "Priya Nandakumar",
+    "type": "Person",
+    "aliases": [
+     "Priya"
+    ],
+    "description": "Prospective advisor with hospitality purchasing experience"
+   },
+   {
+    "name": "Saltmarsh Hotels",
+    "type": "Organization",
+    "aliases": [],
+    "description": "Hotel group where Priya ran F&B purchasing"
+   },
+   {
+    "name": "Juniper Cafe Group",
+    "type": "Organization",
+    "aliases": [
+     "Juniper"
+    ],
+    "description": "Café group Priya used to buy for"
+   },
+   {
+    "name": "Fernwick Roasting Co",
+    "type": "Organization",
+    "aliases": [
+     "Fernwick"
+    ],
+    "description": "Coffee roaster"
+   },
+   {
+    "name": "Brightway Grocers",
+    "type": "Organization",
+    "aliases": [],
+    "description": "Ruth's former employer"
+   }
+  ],
+  "relationships": [
+   {
+    "source": "Priya Nandakumar",
+    "target": "Fernwick Roasting Co",
+    "type": "ADVISES",
+    "detail": "monthly retainer starting April 2024",
+    "valid_from": "2024-04",
+    "valid_to": null,
+    "modality": "fact",
+    "confidence": "high"
+   },
+   {
+    "source": "Priya Nandakumar",
+    "target": "Saltmarsh Hotels",
+    "type": "ROLE_AT",
+    "detail": "ran food and beverage purchasing",
+    "valid_from": null,
+    "valid_to": null,
+    "modality": "fact",
+    "confidence": "high"
+   },
+   {
+    "source": "Priya Nandakumar",
+    "target": "Juniper Cafe Group",
+    "type": "INTRODUCED",
+    "detail": "offered to introduce",
+    "valid_from": null,
+    "valid_to": null,
+    "modality": "plan",
+    "confidence": "high"
+   }
+  ],
+  "claims": [
+   {
+    "subject": "Priya Nandakumar",
+    "attribute": "view on café groups",
+    "value": "consistency, training and delivery reliability matter more than price",
+    "valid_from": null,
+    "valid_to": null,
+    "modality": "opinion",
+    "confidence": "high",
+    "evidence": null,
+    "quote": "consistency, training and delivery reliability matter more than price"
+   }
+  ]
+ },
+ "Meetings/2024-06-18 Intro meeting Juniper Cafe Group.md::0": {
+  "model": "hand-written",
+  "entities": [
+   {
+    "name": "Priya Nandakumar",
+    "type": "Person",
+    "aliases": [
+     "Priya"
+    ],
+    "description": "Advisor who made the introduction"
+   },
+   {
+    "name": "Owen Brandt",
+    "type": "Person",
+    "aliases": [],
+    "description": "Head of purchasing at Juniper Cafe Group"
+   },
+   {
+    "name": "Juniper Cafe Group",
+    "type": "Organization",
+    "aliases": [
+     "Juniper"
+    ],
+    "description": "Café group"
+   },
+   {
+    "name": "Sam Patel",
+    "type": "Person",
+    "aliases": [],
+    "description": "Fernwick barista trainer"
+   },
+   {
+    "name": "Harbour Blend",
+    "type": "Product",
+    "aliases": [],
+    "description": "House blend"
+   },
+   {
+    "name": "Fernwick Roasting Co",
+    "type": "Organization",
+    "aliases": [
+     "Fernwick"
+    ],
+    "description": "Coffee roaster"
+   }
+  ],
+  "relationships": [
+   {
+    "source": "Priya Nandakumar",
+    "target": "Juniper Cafe Group",
+    "type": "INTRODUCED",
+    "detail": "introduced Owen Brandt to Fernwick",
+    "valid_from": "2024-06-18",
+    "valid_to": null,
+    "modality": "fact",
+    "confidence": "high"
+   },
+   {
+    "source": "Owen Brandt",
+    "target": "Juniper Cafe Group",
+    "type": "ROLE_AT",
+    "detail": "head of purchasing",
+    "valid_from": null,
+    "valid_to": null,
+    "modality": "fact",
+    "confidence": "high"
+   },
+   {
+    "source": "Fernwick Roasting Co",
+    "target": "Juniper Cafe Group",
+    "type": "MET_WITH",
+    "detail": "tasting at their Harbour Street café",
+    "valid_from": "2024-06-18",
+    "valid_to": null,
+    "modality": "fact",
+    "confidence": "high"
+   }
+  ],
+  "claims": [
+   {
+    "subject": "Juniper Cafe Group",
+    "attribute": "trial order",
+    "value": "40 kg in July across two sites",
+    "valid_from": null,
+    "valid_to": null,
+    "modality": "fact",
+    "confidence": "high",
+    "evidence": null,
+    "quote": "Agreed a 40 kg trial order for July across two sites"
+   },
+   {
+    "subject": "Juniper Cafe Group",
+    "attribute": "complaint about current roaster",
+    "value": "consistency",
+    "valid_from": null,
+    "valid_to": null,
+    "modality": "reported",
+    "confidence": "high",
+    "evidence": null,
+    "quote": "unhappy with their current roaster's consistency"
+   }
+  ]
+ },
+ "Meetings/2024-10-15 Board meeting Q3 2024.md::0": {
+  "model": "hand-written",
+  "entities": [
+   {
+    "name": "2024-10-15 Board meeting Q3 2024",
+    "type": "Event",
+    "aliases": [],
+    "description": "Q3 2024 board meeting"
+   },
+   {
+    "name": "Fernwick Roasting Co",
+    "type": "Organization",
+    "aliases": [
+     "Fernwick"
+    ],
+    "description": "Coffee roaster"
+   },
+   {
+    "name": "Juniper Cafe Group",
+    "type": "Organization",
+    "aliases": [
+     "Juniper"
+    ],
+    "description": "Café group with six sites"
+   },
+   {
+    "name": "Tallybook order portal",
+    "type": "Product",
+    "aliases": [
+     "Tallybook"
+    ],
+    "description": "Order portal"
+   },
+   {
+    "name": "Fernwick at Home",
+    "type": "Product",
+    "aliases": [],
+    "description": "Subscription"
+   },
+   {
+    "name": "Ruth Calloway",
+    "type": "Person",
+    "aliases": [],
+    "description": "Founder"
+   },
+   {
+    "name": "Priya Nandakumar",
+    "type": "Person",
+    "aliases": [
+     "Priya"
+    ],
+    "description": "Advisor"
+   },
+   {
+    "name": "Lena Fischer",
+    "type": "Person",
+    "aliases": [],
+    "description": "Finance lead"
+   }
+  ],
+  "relationships": [
+   {
+    "source": "Ruth Calloway",
+    "target": "2024-10-15 Board meeting Q3 2024",
+    "type": "PARTICIPATED_IN",
+    "detail": "present",
+    "valid_from": null,
+    "valid_to": null,
+    "modality": "fact",
+    "confidence": "high"
+   },
+   {
+    "source": "Priya Nandakumar",
+    "target": "2024-10-15 Board meeting Q3 2024",
+    "type": "PARTICIPATED_IN",
+    "detail": "present",
+    "valid_from": null,
+    "valid_to": null,
+    "modality": "fact",
+    "confidence": "high"
+   },
+   {
+    "source": "Lena Fischer",
+    "target": "2024-10-15 Board meeting Q3 2024",
+    "type": "PARTICIPATED_IN",
+    "detail": "present",
+    "valid_from": null,
+    "valid_to": null,
+    "modality": "fact",
+    "confidence": "high"
+   }
+  ],
+  "claims": [
+   {
+    "subject": "Fernwick Roasting Co",
+    "attribute": "wholesale accounts",
+    "value": "17",
+    "valid_from": null,
+    "valid_to": null,
+    "modality": "fact",
+    "confidence": "high",
+    "evidence": null,
+    "quote": "Wholesale accounts: 17"
+   },
+   {
+    "subject": "Fernwick at Home",
+    "attribute": "launch date",
+    "value": "4 November 2024",
+    "valid_from": null,
+    "valid_to": null,
+    "modality": "plan",
+    "confidence": "high",
+    "evidence": null,
+    "quote": "launch moved to 4 November"
+   },
+   {
+    "subject": "Tallybook order portal",
+    "attribute": "missed orders since launch",
+    "value": "0",
+    "valid_from": null,
+    "valid_to": null,
+    "modality": "fact",
+    "confidence": "high",
+    "evidence": null,
+    "quote": "no missed orders since"
+   }
+  ]
+ },
+ "Meetings/2025-04-14 Quarterly review Q1 2025.md::0": {
+  "model": "hand-written",
+  "entities": [
+   {
+    "name": "2025-04-14 Quarterly review Q1 2025",
+    "type": "Event",
+    "aliases": [],
+    "description": "Q1 2025 quarterly review"
+   },
+   {
+    "name": "Fernwick Roasting Co",
+    "type": "Organization",
+    "aliases": [
+     "Fernwick"
+    ],
+    "description": "Coffee roaster"
+   },
+   {
+    "name": "Halyard Hotel",
+    "type": "Organization",
+    "aliases": [],
+    "description": "New client from February"
+   },
+   {
+    "name": "Fernwick at Home",
+    "type": "Product",
+    "aliases": [],
+    "description": "Subscription"
+   },
+   {
+    "name": "Maya Okafor",
+    "type": "Person",
+    "aliases": [],
+    "description": "Head roaster leaving end of April"
+   },
+   {
+    "name": "Daniel Reyes",
+    "type": "Person",
+    "aliases": [],
+    "description": "Next head roaster"
+   },
+   {
+    "name": "Alta Verde Importers",
+    "type": "Organization",
+    "aliases": [
+     "Alta Verde"
+    ],
+    "description": "Importer"
+   },
+   {
+    "name": "Raise wholesale prices for 2025",
+    "type": "Decision",
+    "aliases": [],
+    "description": "Price rise behind this list"
+   }
+  ],
+  "relationships": [
+   {
+    "source": "Halyard Hotel",
+    "target": "Fernwick Roasting Co",
+    "type": "CLIENT_OF",
+    "detail": "started in February",
+    "valid_from": "2025-02",
+    "valid_to": null,
+    "modality": "fact",
+    "confidence": "high"
+   },
+   {
+    "source": "Daniel Reyes",
+    "target": "Fernwick Roasting Co",
+    "type": "ROLE_AT",
+    "detail": "head roaster from 1 May",
+    "valid_from": "2025-05-01",
+    "valid_to": null,
+    "modality": "plan",
+    "confidence": "high"
+   }
+  ],
+  "claims": [
+   {
+    "subject": "Fernwick Roasting Co",
+    "attribute": "wholesale accounts",
+    "value": "23",
+    "valid_from": null,
+    "valid_to": null,
+    "modality": "fact",
+    "confidence": "high",
+    "evidence": null,
+    "quote": "Wholesale accounts: 23"
+   },
+   {
+    "subject": "Fernwick at Home",
+    "attribute": "subscribers",
+    "value": "310",
+    "valid_from": null,
+    "valid_to": null,
+    "modality": "fact",
+    "confidence": "high",
+    "evidence": null,
+    "quote": "[[Fernwick at Home]]: 310 subscribers"
+   },
+   {
+    "subject": "Raise wholesale prices for 2025",
+    "attribute": "accounts lost",
+    "value": "0",
+    "valid_from": null,
+    "valid_to": null,
+    "modality": "fact",
+    "confidence": "high",
+    "evidence": null,
+    "quote": "No accounts lost after the January price rise"
+   },
+   {
+    "subject": "Fernwick Roasting Co",
+    "attribute": "head roaster",
+    "value": "Daniel Reyes",
+    "valid_from": "2025-05-01",
+    "valid_to": null,
+    "modality": "plan",
+    "confidence": "high",
+    "evidence": null,
+    "quote": "Daniel Reyes becomes head roaster from 1 May"
+   },
+   {
+    "subject": "Alta Verde Importers",
+    "attribute": "April 2025 shipment delay",
+    "value": "nine days",
+    "valid_from": null,
+    "valid_to": null,
+    "modality": "fact",
+    "confidence": "high",
+    "evidence": null,
+    "quote": "arrived nine days late"
+   }
+  ]
+ },
+ "Meetings/2025-07-08 Board meeting Q2 2025.md::0": {
+  "model": "hand-written",
+  "entities": [
+   {
+    "name": "2025-07-08 Board meeting Q2 2025",
+    "type": "Event",
+    "aliases": [],
+    "description": "Q2 2025 board meeting"
+   },
+   {
+    "name": "Cooperativa Rio Claro",
+    "type": "Organization",
+    "aliases": [
+     "Rio Claro"
+    ],
+    "description": "New supplier"
+   },
+   {
+    "name": "Switch green coffee supplier to Cooperativa Rio Claro",
+    "type": "Decision",
+    "aliases": [],
+    "description": "Supplier switch"
+   },
+   {
+    "name": "Millbrook roastery",
+    "type": "Project",
+    "aliases": [
+     "second roastery"
+    ],
+    "description": "Planned second roastery"
+   },
+   {
+    "name": "Port Alder Small Business Fund",
+    "type": "Organization",
+    "aliases": [],
+    "description": "Grant fund"
+   },
+   {
+    "name": "Lena Fischer",
+    "type": "Person",
+    "aliases": [],
+    "description": "Finance lead"
+   },
+   {
+    "name": "Fernwick Roasting Co",
+    "type": "Organization",
+    "aliases": [
+     "Fernwick"
+    ],
+    "description": "Coffee roaster"
+   },
+   {
+    "name": "Port Alder Small Business Fund grant",
+    "type": "Document",
+    "aliases": [],
+    "description": "Grant for the afterburner"
+   }
+  ],
+  "relationships": [
+   {
+    "source": "Cooperativa Rio Claro",
+    "target": "Fernwick Roasting Co",
+    "type": "SUPPLIER_TO",
+    "detail": "first container arrives this month",
+    "valid_from": "2025-07",
+    "valid_to": null,
+    "modality": "fact",
+    "confidence": "high"
+   }
+  ],
+  "claims": [
+   {
+    "subject": "Millbrook roastery",
+    "attribute": "status",
+    "value": "unit viewed; fit-out quote requested",
+    "valid_from": null,
+    "valid_to": null,
+    "modality": "fact",
+    "confidence": "high",
+    "evidence": null,
+    "quote": "Viewed a unit in Millbrook for the second roastery"
+   },
+   {
+    "subject": "Port Alder Small Business Fund grant",
+    "attribute": "status",
+    "value": "applied",
+    "valid_from": null,
+    "valid_to": null,
+    "modality": "fact",
+    "confidence": "high",
+    "evidence": null,
+    "quote": "Applied to the [[Port Alder Small Business Fund grant]]"
+   },
+   {
+    "subject": "Fernwick Roasting Co",
+    "attribute": "Q3 2025 margin outlook",
+    "value": "will dip unless prices move",
+    "valid_from": null,
+    "valid_to": null,
+    "modality": "opinion",
+    "confidence": "high",
+    "evidence": null,
+    "quote": "margins will dip in Q3 unless prices move"
+   }
+  ]
+ },
+ "Meetings/2025-10-21 Board meeting Q3 2025.md::0": {
+  "model": "hand-written",
+  "entities": [
+   {
+    "name": "2025-10-21 Board meeting Q3 2025",
+    "type": "Event",
+    "aliases": [],
+    "description": "Q3 2025 board meeting"
+   },
+   {
+    "name": "Fernwick Roasting Co",
+    "type": "Organization",
+    "aliases": [
+     "Fernwick"
+    ],
+    "description": "Coffee roaster"
+   },
+   {
+    "name": "The Copper Kettle",
+    "type": "Organization",
+    "aliases": [
+     "Copper Kettle"
+    ],
+    "description": "Lost client"
+   },
+   {
+    "name": "Bramble Deli",
+    "type": "Organization",
+    "aliases": [],
+    "description": "Lost client"
+   },
+   {
+    "name": "Northgate Library Cafe",
+    "type": "Organization",
+    "aliases": [],
+    "description": "New client"
+   },
+   {
+    "name": "Fernwick at Home",
+    "type": "Product",
+    "aliases": [],
+    "description": "Subscription"
+   },
+   {
+    "name": "Millbrook roastery",
+    "type": "Project",
+    "aliases": [
+     "second roastery"
+    ],
+    "description": "Planned second roastery"
+   },
+   {
+    "name": "Daniel Reyes",
+    "type": "Person",
+    "aliases": [],
+    "description": "Head roaster"
+   },
+   {
+    "name": "2025 Port Alder Regional Roasting Cup",
+    "type": "Event",
+    "aliases": [],
+    "description": "Roasting competition"
+   },
+   {
+    "name": "Port Alder Small Business Fund grant",
+    "type": "Document",
+    "aliases": [],
+    "description": "Grant for the afterburner"
+   }
+  ],
+  "relationships": [
+   {
+    "source": "Northgate Library Cafe",
+    "target": "Fernwick Roasting Co",
+    "type": "CLIENT_OF",
+    "detail": "new account",
+    "valid_from": "2025-09",
+    "valid_to": null,
+    "modality": "fact",
+    "confidence": "high"
+   },
+   {
+    "source": "Daniel Reyes",
+    "target": "2025 Port Alder Regional Roasting Cup",
+    "type": "RECEIVED",
+    "detail": "placed second",
+    "valid_from": null,
+    "valid_to": null,
+    "modality": "fact",
+    "confidence": "high"
+   },
+   {
+    "source": "Fernwick Roasting Co",
+    "target": "Port Alder Small Business Fund grant",
+    "type": "RECEIVED",
+    "detail": "$15,000 received",
+    "valid_from": null,
+    "valid_to": null,
+    "modality": "fact",
+    "confidence": "high"
+   }
+  ],
+  "claims": [
+   {
+    "subject": "Fernwick Roasting Co",
+    "attribute": "wholesale accounts",
+    "value": "22",
+    "valid_from": null,
+    "valid_to": null,
+    "modality": "fact",
+    "confidence": "high",
+    "evidence": null,
+    "quote": "Wholesale accounts: 22, after losing [[The Copper Kettle]] and Bramble Deli"
+   },
+   {
+    "subject": "Fernwick at Home",
+    "attribute": "subscribers",
+    "value": "420",
+    "valid_from": null,
+    "valid_to": null,
+    "modality": "fact",
+    "confidence": "high",
+    "evidence": null,
+    "quote": "[[Fernwick at Home]]: 420 subscribers"
+   },
+   {
+    "subject": "Port Alder Small Business Fund grant",
+    "attribute": "amount",
+    "value": "$15,000",
+    "valid_from": null,
+    "valid_to": null,
+    "modality": "fact",
+    "confidence": "high",
+    "evidence": null,
+    "quote": "Grant of $15,000 received"
+   },
+   {
+    "subject": "Millbrook roastery",
+    "attribute": "fit-out quote",
+    "value": "$410,000",
+    "valid_from": null,
+    "valid_to": null,
+    "modality": "fact",
+    "confidence": "high",
+    "evidence": null,
+    "quote": "Millbrook fit-out quote: $410,000"
+   },
+   {
+    "subject": "Millbrook roastery",
+    "attribute": "status",
+    "value": "decision postponed to January 2026",
+    "valid_from": null,
+    "valid_to": null,
+    "modality": "fact",
+    "confidence": "high",
+    "evidence": null,
+    "quote": "Decision postponed to the January board"
+   }
+  ]
+ },
+ "Meetings/2026-01-20 Board meeting Q4 2025.md::0": {
+  "model": "hand-written",
+  "entities": [
+   {
+    "name": "2026-01-20 Board meeting Q4 2025",
+    "type": "Event",
+    "aliases": [],
+    "description": "Q4 2025 board meeting"
+   },
+   {
+    "name": "Fernwick Roasting Co",
+    "type": "Organization",
+    "aliases": [
+     "Fernwick"
+    ],
+    "description": "Coffee roaster"
+   },
+   {
+    "name": "Pine and Pour",
+    "type": "Organization",
+    "aliases": [],
+    "description": "New client"
+   },
+   {
+    "name": "Juniper Cafe Group",
+    "type": "Organization",
+    "aliases": [
+     "Juniper"
+    ],
+    "description": "Client that renewed"
+   },
+   {
+    "name": "Millbrook roastery",
+    "type": "Project",
+    "aliases": [
+     "second roastery"
+    ],
+    "description": "Second roastery"
+   },
+   {
+    "name": "Shelve Millbrook roastery",
+    "type": "Decision",
+    "aliases": [],
+    "description": "Shelve the second roastery and lease a 15 kg roaster"
+   },
+   {
+    "name": "15 kg roaster",
+    "type": "Product",
+    "aliases": [],
+    "description": "Leased roaster"
+   },
+   {
+    "name": "Ruth Calloway",
+    "type": "Person",
+    "aliases": [],
+    "description": "Founder"
+   },
+   {
+    "name": "Priya Nandakumar",
+    "type": "Person",
+    "aliases": [
+     "Priya"
+    ],
+    "description": "Advisor"
+   },
+   {
+    "name": "Lena Fischer",
+    "type": "Person",
+    "aliases": [],
+    "description": "Finance lead"
+   },
+   {
+    "name": "Daniel Reyes",
+    "type": "Person",
+    "aliases": [],
+    "description": "Head roaster"
+   }
+  ],
+  "relationships": [
+   {
+    "source": "Pine and Pour",
+    "target": "Fernwick Roasting Co",
+    "type": "CLIENT_OF",
+    "detail": "started this month",
+    "valid_from": "2026-01",
+    "valid_to": null,
+    "modality": "fact",
+    "confidence": "high"
+   },
+   {
+    "source": "Juniper Cafe Group",
+    "target": "Fernwick Roasting Co",
+    "type": "CLIENT_OF",
+    "detail": "renewed for 2026",
+    "valid_from": "2026-01",
+    "valid_to": null,
+    "modality": "fact",
+    "confidence": "high"
+   },
+   {
+    "source": "Ruth Calloway",
+    "target": "Shelve Millbrook roastery",
+    "type": "DECIDED",
+    "detail": "agreed at the board",
+    "valid_from": "2026-01-20",
+    "valid_to": null,
+    "modality": "fact",
+    "confidence": "high"
+   },
+   {
+    "source": "Shelve Millbrook roastery",
+    "target": "Millbrook roastery",
+    "type": "AFFECTS",
+    "detail": "shelved",
+    "valid_from": null,
+    "valid_to": null,
+    "modality": "fact",
+    "confidence": "high"
+   },
+   {
+    "source": "Shelve Millbrook roastery",
+    "target": "15 kg roaster",
+    "type": "LED_TO",
+    "detail": "lease instead",
+    "valid_from": null,
+    "valid_to": null,
+    "modality": "fact",
+    "confidence": "high"
+   }
+  ],
+  "claims": [
+   {
+    "subject": "Fernwick Roasting Co",
+    "attribute": "wholesale accounts",
+    "value": "24",
+    "valid_from": null,
+    "valid_to": null,
+    "modality": "fact",
+    "confidence": "high",
+    "evidence": null,
+    "quote": "Wholesale accounts: 24"
+   },
+   {
+    "subject": "Millbrook roastery",
+    "attribute": "status",
+    "value": "shelved",
+    "valid_from": null,
+    "valid_to": null,
+    "modality": "fact",
+    "confidence": "high",
+    "evidence": null,
+    "quote": "Agreed to shelve the second roastery and lease a 15 kg roaster instead"
+   },
+   {
+    "subject": "Millbrook roastery",
+    "attribute": "bank loan offered",
+    "value": "$150,000",
+    "valid_from": null,
+    "valid_to": null,
+    "modality": "fact",
+    "confidence": "high",
+    "evidence": null,
+    "quote": "the bank offered $150,000 against a $410,000 fit-out"
+   },
+   {
+    "subject": "Priya Nandakumar",
+    "attribute": "view on café groups",
+    "value": "reliable delivery matters more than a second site",
+    "valid_from": null,
+    "valid_to": null,
+    "modality": "opinion",
+    "confidence": "high",
+    "evidence": null,
+    "quote": "café groups care about reliable delivery more than a second site"
+   }
+  ]
+ },
+ "Meetings/2026-03-10 Call with Tomas Herrera.md::0": {
+  "model": "hand-written",
+  "entities": [
+   {
+    "name": "Tomas Herrera",
+    "type": "Person",
+    "aliases": [],
+    "description": "Export manager at Cooperativa Rio Claro"
+   },
+   {
+    "name": "Cooperativa Rio Claro",
+    "type": "Organization",
+    "aliases": [
+     "Rio Claro"
+    ],
+    "description": "Supplier"
+   },
+   {
+    "name": "Daniel Reyes",
+    "type": "Person",
+    "aliases": [],
+    "description": "Head roaster"
+   }
+  ],
+  "relationships": [
+   {
+    "source": "Tomas Herrera",
+    "target": "Cooperativa Rio Claro",
+    "type": "ROLE_AT",
+    "detail": "export manager",
+    "valid_from": null,
+    "valid_to": null,
+    "modality": "fact",
+    "confidence": "high"
+   },
+   {
+    "source": "Daniel Reyes",
+    "target": "Cooperativa Rio Claro",
+    "type": "MET_WITH",
+    "detail": "visit planned for June 2026",
+    "valid_from": null,
+    "valid_to": null,
+    "modality": "plan",
+    "confidence": "high"
+   }
+  ],
+  "claims": [
+   {
+    "subject": "Cooperativa Rio Claro",
+    "attribute": "2026/27 price change",
+    "value": "about 4% higher",
+    "valid_from": null,
+    "valid_to": null,
+    "modality": "reported",
+    "confidence": "high",
+    "evidence": null,
+    "quote": "about 4% higher"
+   },
+   {
+    "subject": "Cooperativa Rio Claro",
+    "attribute": "visit",
+    "value": "June 2026",
+    "valid_from": null,
+    "valid_to": null,
+    "modality": "plan",
+    "confidence": "high",
+    "evidence": null,
+    "quote": "We plan to visit the cooperative in June 2026"
+   }
+  ]
+ },
+ "Operations/2024-01 Wholesale price list.md::0": {
+  "model": "hand-written",
+  "entities": [
+   {
+    "name": "2024-01 Wholesale price list",
+    "type": "Document",
+    "aliases": [],
+    "description": "Price list valid from 2 January 2024"
+   },
+   {
+    "name": "Harbour Blend",
+    "type": "Product",
+    "aliases": [],
+    "description": "House blend"
+   },
+   {
+    "name": "Seasonal single origin",
+    "type": "Product",
+    "aliases": [],
+    "description": "Fernwick's rotating single-origin coffee"
+   },
+   {
+    "name": "Swiss Water decaf",
+    "type": "Product",
+    "aliases": [],
+    "description": "Fernwick's decaf coffee"
+   }
+  ],
+  "relationships": [
+   {
+    "source": "2024-01 Wholesale price list",
+    "target": "Harbour Blend",
+    "type": "COVERS",
+    "detail": "$24.00 per kg",
+    "valid_from": null,
+    "valid_to": null,
+    "modality": "fact",
+    "confidence": "high"
+   }
+  ],
+  "claims": [
+   {
+    "subject": "Harbour Blend",
+    "attribute": "wholesale price",
+    "value": "$24.00 per kg",
+    "valid_from": "2024-01-02",
+    "valid_to": null,
+    "modality": "fact",
+    "confidence": "high",
+    "evidence": null,
+    "quote": "| [[Harbour Blend]] | $24.00 |"
+   },
+   {
+    "subject": "Seasonal single origin",
+    "attribute": "wholesale price",
+    "value": "$30.00 per kg",
+    "valid_from": "2024-01-02",
+    "valid_to": null,
+    "modality": "fact",
+    "confidence": "high",
+    "evidence": null,
+    "quote": "| Seasonal single origin | $30.00 |"
+   },
+   {
+    "subject": "Swiss Water decaf",
+    "attribute": "wholesale price",
+    "value": "$27.00 per kg",
+    "valid_from": "2024-01-02",
+    "valid_to": null,
+    "modality": "fact",
+    "confidence": "high",
+    "evidence": null,
+    "quote": "| Swiss Water decaf | $27.00 |"
+   }
+  ]
+ },
+ "Operations/2025-01 Wholesale price list.md::0": {
+  "model": "hand-written",
+  "entities": [
+   {
+    "name": "2025-01 Wholesale price list",
+    "type": "Document",
+    "aliases": [],
+    "description": "Price list valid from 6 January 2025"
+   },
+   {
+    "name": "Harbour Blend",
+    "type": "Product",
+    "aliases": [],
+    "description": "House blend"
+   },
+   {
+    "name": "Raise wholesale prices for 2025",
+    "type": "Decision",
+    "aliases": [],
+    "description": "Price rise behind this list"
+   },
+   {
+    "name": "Seasonal single origin",
+    "type": "Product",
+    "aliases": [],
+    "description": "Fernwick's rotating single-origin coffee"
+   },
+   {
+    "name": "Swiss Water decaf",
+    "type": "Product",
+    "aliases": [],
+    "description": "Fernwick's decaf coffee"
+   }
+  ],
+  "relationships": [
+   {
+    "source": "2025-01 Wholesale price list",
+    "target": "Harbour Blend",
+    "type": "COVERS",
+    "detail": "$26.50 per kg",
+    "valid_from": null,
+    "valid_to": null,
+    "modality": "fact",
+    "confidence": "high"
+   },
+   {
+    "source": "Raise wholesale prices for 2025",
+    "target": "2025-01 Wholesale price list",
+    "type": "LED_TO",
+    "detail": "new prices",
+    "valid_from": null,
+    "valid_to": null,
+    "modality": "fact",
+    "confidence": "high"
+   }
+  ],
+  "claims": [
+   {
+    "subject": "Harbour Blend",
+    "attribute": "wholesale price",
+    "value": "$26.50 per kg",
+    "valid_from": "2025-01-06",
+    "valid_to": null,
+    "modality": "fact",
+    "confidence": "high",
+    "evidence": null,
+    "quote": "| [[Harbour Blend]] | $26.50 |"
+   },
+   {
+    "subject": "Seasonal single origin",
+    "attribute": "wholesale price",
+    "value": "$32.00 per kg",
+    "valid_from": "2025-01-06",
+    "valid_to": null,
+    "modality": "fact",
+    "confidence": "high",
+    "evidence": null,
+    "quote": "| Seasonal single origin | $32.00 |"
+   },
+   {
+    "subject": "Swiss Water decaf",
+    "attribute": "wholesale price",
+    "value": "$29.00 per kg",
+    "valid_from": "2025-01-06",
+    "valid_to": null,
+    "modality": "fact",
+    "confidence": "high",
+    "evidence": null,
+    "quote": "| Swiss Water decaf | $29.00 |"
+   }
+  ]
+ },
+ "Operations/2025-09 Wholesale price list.md::0": {
+  "model": "hand-written",
+  "entities": [
+   {
+    "name": "2025-09 Wholesale price list",
+    "type": "Document",
+    "aliases": [],
+    "description": "Price list valid from 1 September 2025"
+   },
+   {
+    "name": "Harbour Blend",
+    "type": "Product",
+    "aliases": [],
+    "description": "House blend"
+   },
+   {
+    "name": "Raise Harbour Blend to $28.00 per kg",
+    "type": "Decision",
+    "aliases": [],
+    "description": "Price rise behind this list"
+   },
+   {
+    "name": "Cooperativa Rio Claro",
+    "type": "Organization",
+    "aliases": [
+     "Rio Claro"
+    ],
+    "description": "Direct-trade supplier named on the bags"
+   },
+   {
+    "name": "Seasonal single origin",
+    "type": "Product",
+    "aliases": [],
+    "description": "Fernwick's rotating single-origin coffee"
+   },
+   {
+    "name": "Swiss Water decaf",
+    "type": "Product",
+    "aliases": [],
+    "description": "Fernwick's decaf coffee"
+   },
+   {
+    "name": "Fernwick Roasting Co",
+    "type": "Organization",
+    "aliases": [],
+    "description": "Coffee roaster whose working notes this vault holds"
+   }
+  ],
+  "relationships": [
+   {
+    "source": "2025-09 Wholesale price list",
+    "target": "Harbour Blend",
+    "type": "COVERS",
+    "detail": "$28.00 per kg",
+    "valid_from": null,
+    "valid_to": null,
+    "modality": "fact",
+    "confidence": "high"
+   },
+   {
+    "source": "Raise Harbour Blend to $28.00 per kg",
+    "target": "2025-09 Wholesale price list",
+    "type": "LED_TO",
+    "detail": "new prices",
+    "valid_from": null,
+    "valid_to": null,
+    "modality": "fact",
+    "confidence": "high"
+   },
+   {
+    "source": "2025-09 Wholesale price list",
+    "target": "Cooperativa Rio Claro",
+    "type": "PROMOTES",
+    "detail": "direct trade label on bags",
+    "valid_from": null,
+    "valid_to": null,
+    "modality": "fact",
+    "confidence": "high"
+   }
+  ],
+  "claims": [
+   {
+    "subject": "Harbour Blend",
+    "attribute": "wholesale price",
+    "value": "$28.00 per kg",
+    "valid_from": "2025-09-01",
+    "valid_to": null,
+    "modality": "fact",
+    "confidence": "high",
+    "evidence": null,
+    "quote": "| [[Harbour Blend]] | $28.00 |"
+   },
+   {
+    "subject": "Seasonal single origin",
+    "attribute": "wholesale price",
+    "value": "$34.00 per kg",
+    "valid_from": "2025-09-01",
+    "valid_to": null,
+    "modality": "fact",
+    "confidence": "high",
+    "evidence": null,
+    "quote": "| Seasonal single origin, direct trade | $34.00 |"
+   },
+   {
+    "subject": "Swiss Water decaf",
+    "attribute": "wholesale price",
+    "value": "$30.00 per kg",
+    "valid_from": "2025-09-01",
+    "valid_to": null,
+    "modality": "fact",
+    "confidence": "high",
+    "evidence": null,
+    "quote": "| Swiss Water decaf | $30.00 |"
+   },
+   {
+    "subject": "Fernwick Roasting Co",
+    "attribute": "free delivery threshold",
+    "value": "over 15 kg",
+    "valid_from": null,
+    "valid_to": null,
+    "modality": "fact",
+    "confidence": "high",
+    "evidence": null,
+    "quote": "Free delivery on orders over 15 kg"
+   }
+  ]
+ },
+ "Operations/Fernwick at Home.md::0": {
+  "model": "hand-written",
+  "entities": [
+   {
+    "name": "Fernwick at Home",
+    "type": "Product",
+    "aliases": [],
+    "description": "Fernwick's coffee subscription for home brewers"
+   },
+   {
+    "name": "Harbour Blend",
+    "type": "Product",
+    "aliases": [],
+    "description": "House blend"
+   },
+   {
+    "name": "2024 Plan",
+    "type": "Document",
+    "aliases": [],
+    "description": "Plan that set a Q3 2024 target"
+   }
+  ],
+  "relationships": [
+   {
+    "source": "Fernwick at Home",
+    "target": "Harbour Blend",
+    "type": "RELATED_TO",
+    "detail": "subscribers can choose Harbour Blend",
+    "valid_from": null,
+    "valid_to": null,
+    "modality": "fact",
+    "confidence": "high"
+   }
+  ],
+  "claims": [
+   {
+    "subject": "Fernwick at Home",
+    "attribute": "price",
+    "value": "$18 a month for two 250 g bags",
+    "valid_from": null,
+    "valid_to": null,
+    "modality": "fact",
+    "confidence": "high",
+    "evidence": null,
+    "quote": "two 250 g bags every month, $18 a month"
+   },
+   {
+    "subject": "Fernwick at Home",
+    "attribute": "launch date",
+    "value": "4 November 2024",
+    "valid_from": "2024-11-04",
+    "valid_to": null,
+    "modality": "fact",
+    "confidence": "high",
+    "evidence": null,
+    "quote": "Launched on 4 November 2024"
+   }
+  ]
+ },
+ "Operations/Harbour Blend.md::0": {
+  "model": "hand-written",
+  "entities": [
+   {
+    "name": "Harbour Blend",
+    "type": "Product",
+    "aliases": [],
+    "description": "Fernwick's house espresso and best seller"
+   },
+   {
+    "name": "Cooperativa Rio Claro",
+    "type": "Organization",
+    "aliases": [
+     "Rio Claro"
+    ],
+    "description": "Supplier of the Colombian component"
+   },
+   {
+    "name": "Alta Verde Importers",
+    "type": "Organization",
+    "aliases": [
+     "Alta Verde"
+    ],
+    "description": "Former supplier of the Colombian component"
+   }
+  ],
+  "relationships": [
+   {
+    "source": "Cooperativa Rio Claro",
+    "target": "Harbour Blend",
+    "type": "SUPPLIER_TO",
+    "detail": "60% washed Colombia since July 2025",
+    "valid_from": "2025-07",
+    "valid_to": null,
+    "modality": "fact",
+    "confidence": "high"
+   }
+  ],
+  "claims": [
+   {
+    "subject": "Harbour Blend",
+    "attribute": "share of wholesale volume",
+    "value": "around 70%",
+    "valid_from": null,
+    "valid_to": null,
+    "modality": "fact",
+    "confidence": "high",
+    "evidence": null,
+    "quote": "around 70% of wholesale volume"
+   },
+   {
+    "subject": "Harbour Blend",
+    "attribute": "recipe",
+    "value": "60% washed Colombia from Rio Claro, 40% natural Brazil",
+    "valid_from": "2025-07",
+    "valid_to": null,
+    "modality": "fact",
+    "confidence": "high",
+    "evidence": null,
+    "quote": "60% washed Colombia from [[Cooperativa Rio Claro]], 40% natural Brazil"
+   }
+  ]
+ },
+ "Operations/Roasting equipment.md::0": {
+  "model": "hand-written",
+  "entities": [
+   {
+    "name": "5 kg drum roaster",
+    "type": "Product",
+    "aliases": [],
+    "description": "Second-hand roaster bought in 2021"
+   },
+   {
+    "name": "Afterburner",
+    "type": "Product",
+    "aliases": [],
+    "description": "Fitted October 2025 to cut smoke and odour"
+   },
+   {
+    "name": "15 kg roaster",
+    "type": "Product",
+    "aliases": [],
+    "description": "Leased roaster to be installed May 2026"
+   },
+   {
+    "name": "Port Alder Small Business Fund",
+    "type": "Organization",
+    "aliases": [],
+    "description": "Fund that paid for the afterburner"
+   },
+   {
+    "name": "Shelve Millbrook roastery",
+    "type": "Decision",
+    "aliases": [],
+    "description": "Decision to lease a 15 kg roaster instead of a second site"
+   },
+   {
+    "name": "Fernwick Roasting Co",
+    "type": "Organization",
+    "aliases": [
+     "Fernwick"
+    ],
+    "description": "Coffee roaster"
+   }
+  ],
+  "relationships": [
+   {
+    "source": "Fernwick Roasting Co",
+    "target": "5 kg drum roaster",
+    "type": "USES",
+    "detail": "running two shifts on most days since late 2025",
+    "valid_from": null,
+    "valid_to": null,
+    "modality": "fact",
+    "confidence": "high"
+   },
+   {
+    "source": "Port Alder Small Business Fund",
+    "target": "Afterburner",
+    "type": "INVESTED_IN",
+    "detail": "grant paid for it",
+    "valid_from": null,
+    "valid_to": null,
+    "modality": "fact",
+    "confidence": "high"
+   },
+   {
+    "source": "Shelve Millbrook roastery",
+    "target": "15 kg roaster",
+    "type": "LED_TO",
+    "detail": "lease replaces the plan for a second site",
+    "valid_from": null,
+    "valid_to": null,
+    "modality": "fact",
+    "confidence": "high"
+   }
+  ],
+  "claims": [
+   {
+    "subject": "15 kg roaster",
+    "attribute": "lease",
+    "value": "five years at $2,100 a month",
+    "valid_from": "2026-02",
+    "valid_to": null,
+    "modality": "fact",
+    "confidence": "high",
+    "evidence": null,
+    "quote": "five-year lease signed in February 2026 at $2,100 a month"
+   },
+   {
+    "subject": "15 kg roaster",
+    "attribute": "installation",
+    "value": "May 2026",
+    "valid_from": null,
+    "valid_to": null,
+    "modality": "plan",
+    "confidence": "high",
+    "evidence": null,
+    "quote": "Installation is planned for May 2026"
+   },
+   {
+    "subject": "Afterburner",
+    "attribute": "fitted",
+    "value": "October 2025",
+    "valid_from": "2025-10",
+    "valid_to": null,
+    "modality": "fact",
+    "confidence": "high",
+    "evidence": null,
+    "quote": "Afterburner fitted in October 2025"
+   }
+  ]
+ },
+ "Operations/Tallybook order portal.md::0": {
+  "model": "hand-written",
+  "entities": [
+   {
+    "name": "Tallybook order portal",
+    "type": "Product",
+    "aliases": [
+     "Tallybook"
+    ],
+    "description": "Online ordering portal for wholesale clients"
+   },
+   {
+    "name": "Order spreadsheet",
+    "type": "Product",
+    "aliases": [],
+    "description": "Shared spreadsheet used for wholesale orders before September 2024"
+   },
+   {
+    "name": "Lena Fischer",
+    "type": "Person",
+    "aliases": [],
+    "description": "Finance lead who receives the invoices"
+   },
+   {
+    "name": "Fernwick Roasting Co",
+    "type": "Organization",
+    "aliases": [
+     "Fernwick"
+    ],
+    "description": "Coffee roaster"
+   }
+  ],
+  "relationships": [
+   {
+    "source": "Tallybook order portal",
+    "target": "Order spreadsheet",
+    "type": "REPLACED",
+    "detail": "live since September 2024",
+    "valid_from": "2024-09",
+    "valid_to": null,
+    "modality": "fact",
+    "confidence": "high"
+   },
+   {
+    "source": "Fernwick Roasting Co",
+    "target": "Tallybook order portal",
+    "type": "USES",
+    "detail": "wholesale ordering",
+    "valid_from": null,
+    "valid_to": null,
+    "modality": "fact",
+    "confidence": "high"
+   }
+  ],
+  "claims": [
+   {
+    "subject": "Tallybook order portal",
+    "attribute": "cost",
+    "value": "$49 a month",
+    "valid_from": null,
+    "valid_to": null,
+    "modality": "fact",
+    "confidence": "high",
+    "evidence": null,
+    "quote": "Costs $49 a month"
+   }
+  ]
+ },
+ "Operations/Team and roles.md::0": {
+  "model": "hand-written",
+  "entities": [
+   {
+    "name": "Fernwick Roasting Co",
+    "type": "Organization",
+    "aliases": [
+     "Fernwick"
+    ],
+    "description": "Coffee roaster"
+   },
+   {
+    "name": "Ruth Calloway",
+    "type": "Person",
+    "aliases": [],
+    "description": "Founder and managing director"
+   },
+   {
+    "name": "Daniel Reyes",
+    "type": "Person",
+    "aliases": [],
+    "description": "Head roaster"
+   },
+   {
+    "name": "Sam Patel",
+    "type": "Person",
+    "aliases": [],
+    "description": "Wholesale support and barista trainer"
+   },
+   {
+    "name": "Lena Fischer",
+    "type": "Person",
+    "aliases": [],
+    "description": "Part-time finance lead"
+   },
+   {
+    "name": "Priya Nandakumar",
+    "type": "Person",
+    "aliases": [],
+    "description": "Advisor, not on the payroll"
+   }
+  ],
+  "relationships": [
+   {
+    "source": "Ruth Calloway",
+    "target": "Fernwick Roasting Co",
+    "type": "ROLE_AT",
+    "detail": "founder and managing director; sales and suppliers",
+    "valid_from": null,
+    "valid_to": null,
+    "modality": "fact",
+    "confidence": "high"
+   },
+   {
+    "source": "Daniel Reyes",
+    "target": "Fernwick Roasting Co",
+    "type": "ROLE_AT",
+    "detail": "head roaster",
+    "valid_from": null,
+    "valid_to": null,
+    "modality": "fact",
+    "confidence": "high"
+   },
+   {
+    "source": "Sam Patel",
+    "target": "Fernwick Roasting Co",
+    "type": "ROLE_AT",
+    "detail": "wholesale support and barista trainer",
+    "valid_from": null,
+    "valid_to": null,
+    "modality": "fact",
+    "confidence": "high"
+   },
+   {
+    "source": "Lena Fischer",
+    "target": "Fernwick Roasting Co",
+    "type": "ROLE_AT",
+    "detail": "part-time finance lead (books, payroll, cash flow)",
+    "valid_from": null,
+    "valid_to": null,
+    "modality": "fact",
+    "confidence": "high"
+   },
+   {
+    "source": "Priya Nandakumar",
+    "target": "Fernwick Roasting Co",
+    "type": "ADVISES",
+    "detail": "advises, not on the payroll",
+    "valid_from": null,
+    "valid_to": null,
+    "modality": "fact",
+    "confidence": "high"
+   }
+  ],
+  "claims": [
+   {
+    "subject": "Fernwick Roasting Co",
+    "attribute": "headcount",
+    "value": "11 people, 8 full-time",
+    "valid_from": "2026-03",
+    "valid_to": null,
+    "modality": "fact",
+    "confidence": "high",
+    "evidence": null,
+    "quote": "As of March 2026 we are 11 people, 8 full-time"
+   },
+   {
+    "subject": "Fernwick Roasting Co",
+    "attribute": "head roaster",
+    "value": "Daniel Reyes",
+    "valid_from": null,
+    "valid_to": null,
+    "modality": "fact",
+    "confidence": "high",
+    "evidence": null,
+    "quote": "[[Daniel Reyes]]: head roaster"
+   }
+  ]
+ },
+ "Strategy/2024 Plan.md::0": {
+  "model": "hand-written",
+  "entities": [
+   {
+    "name": "2024 Plan",
+    "type": "Document",
+    "aliases": [],
+    "description": "Fernwick's plan for 2024"
+   },
+   {
+    "name": "Fernwick Roasting Co",
+    "type": "Organization",
+    "aliases": [
+     "Fernwick"
+    ],
+    "description": "Coffee roaster"
+   },
+   {
+    "name": "Lena Fischer",
+    "type": "Person",
+    "aliases": [],
+    "description": "Finance help starting February 2024"
+   },
+   {
+    "name": "Fernwick at Home",
+    "type": "Product",
+    "aliases": [],
+    "description": "Fernwick's coffee subscription"
+   }
+  ],
+  "relationships": [
+   {
+    "source": "Fernwick Roasting Co",
+    "target": "2024 Plan",
+    "type": "AUTHORED",
+    "detail": "annual plan",
+    "valid_from": null,
+    "valid_to": null,
+    "modality": "fact",
+    "confidence": "high"
+   }
+  ],
+  "claims": [
+   {
+    "subject": "Fernwick Roasting Co",
+    "attribute": "wholesale accounts",
+    "value": "11",
+    "valid_from": null,
+    "valid_to": null,
+    "modality": "fact",
+    "confidence": "high",
+    "evidence": null,
+    "quote": "11 wholesale accounts"
+   },
+   {
+    "subject": "Fernwick Roasting Co",
+    "attribute": "wholesale accounts target",
+    "value": "20 by December 2024",
+    "valid_from": null,
+    "valid_to": null,
+    "modality": "plan",
+    "confidence": "high",
+    "evidence": null,
+    "quote": "Grow to 20 wholesale accounts by December"
+   },
+   {
+    "subject": "Fernwick at Home",
+    "attribute": "launch target",
+    "value": "end of Q3 2024",
+    "valid_from": null,
+    "valid_to": null,
+    "modality": "plan",
+    "confidence": "high",
+    "evidence": null,
+    "quote": "Launch a home subscription by the end of Q3 2024"
+   }
+  ]
+ },
+ "Strategy/2025 Plan.md::0": {
+  "model": "hand-written",
+  "entities": [
+   {
+    "name": "2025 Plan",
+    "type": "Document",
+    "aliases": [],
+    "description": "Fernwick's plan for 2025"
+   },
+   {
+    "name": "Fernwick Roasting Co",
+    "type": "Organization",
+    "aliases": [
+     "Fernwick"
+    ],
+    "description": "Coffee roaster"
+   },
+   {
+    "name": "Millbrook roastery",
+    "type": "Project",
+    "aliases": [
+     "second roastery"
+    ],
+    "description": "Planned second roastery in Millbrook"
+   },
+   {
+    "name": "Juniper Cafe Group",
+    "type": "Organization",
+    "aliases": [
+     "Juniper"
+    ],
+    "description": "Client with sites near Millbrook"
+   },
+   {
+    "name": "Fernwick at Home",
+    "type": "Product",
+    "aliases": [],
+    "description": "Subscription"
+   }
+  ],
+  "relationships": [
+   {
+    "source": "Fernwick Roasting Co",
+    "target": "2025 Plan",
+    "type": "AUTHORED",
+    "detail": "annual plan",
+    "valid_from": null,
+    "valid_to": null,
+    "modality": "fact",
+    "confidence": "high"
+   },
+   {
+    "source": "2025 Plan",
+    "target": "Millbrook roastery",
+    "type": "COVERS",
+    "detail": "open by Q2 2026",
+    "valid_from": null,
+    "valid_to": null,
+    "modality": "plan",
+    "confidence": "high"
+   }
+  ],
+  "claims": [
+   {
+    "subject": "Fernwick Roasting Co",
+    "attribute": "wholesale accounts",
+    "value": "21",
+    "valid_from": null,
+    "valid_to": null,
+    "modality": "fact",
+    "confidence": "high",
+    "evidence": null,
+    "quote": "21 wholesale accounts"
+   },
+   {
+    "subject": "Fernwick at Home",
+    "attribute": "subscribers",
+    "value": "about 240",
+    "valid_from": null,
+    "valid_to": null,
+    "modality": "fact",
+    "confidence": "high",
+    "evidence": null,
+    "quote": "about 240 [[Fernwick at Home]] subscribers"
+   },
+   {
+    "subject": "Fernwick Roasting Co",
+    "attribute": "headcount",
+    "value": "8",
+    "valid_from": null,
+    "valid_to": null,
+    "modality": "fact",
+    "confidence": "high",
+    "evidence": null,
+    "quote": "We are 8 people"
+   },
+   {
+    "subject": "Millbrook roastery",
+    "attribute": "status",
+    "value": "planned to open by Q2 2026",
+    "valid_from": null,
+    "valid_to": null,
+    "modality": "plan",
+    "confidence": "high",
+    "evidence": null,
+    "quote": "Open a second roastery in Millbrook by Q2 2026"
+   },
+   {
+    "subject": "Millbrook roastery",
+    "attribute": "budget",
+    "value": "$250,000",
+    "valid_from": null,
+    "valid_to": null,
+    "modality": "plan",
+    "confidence": "high",
+    "evidence": null,
+    "quote": "Budget for the fit-out: $250,000"
+   },
+   {
+    "subject": "Fernwick Roasting Co",
+    "attribute": "financing",
+    "value": "bank loan of $250,000; no outside equity",
+    "valid_from": null,
+    "valid_to": null,
+    "modality": "plan",
+    "confidence": "high",
+    "evidence": null,
+    "quote": "Finance it with a bank loan of $250,000; no outside equity"
+   },
+   {
+    "subject": "Fernwick Roasting Co",
+    "attribute": "wholesale accounts target",
+    "value": "30 by December 2025",
+    "valid_from": null,
+    "valid_to": null,
+    "modality": "plan",
+    "confidence": "high",
+    "evidence": null,
+    "quote": "Reach 30 wholesale accounts and 500 subscribers by December"
+   },
+   {
+    "subject": "Fernwick at Home",
+    "attribute": "subscribers target",
+    "value": "500 by December 2025",
+    "valid_from": null,
+    "valid_to": null,
+    "modality": "plan",
+    "confidence": "high",
+    "evidence": null,
+    "quote": "Reach 30 wholesale accounts and 500 subscribers by December"
+   }
+  ]
+ },
+ "Strategy/2026 Plan.md::0": {
+  "model": "hand-written",
+  "entities": [
+   {
+    "name": "2026 Plan",
+    "type": "Document",
+    "aliases": [],
+    "description": "Fernwick's plan for 2026"
+   },
+   {
+    "name": "Fernwick Roasting Co",
+    "type": "Organization",
+    "aliases": [
+     "Fernwick"
+    ],
+    "description": "Coffee roaster"
+   },
+   {
+    "name": "Millbrook roastery",
+    "type": "Project",
+    "aliases": [
+     "second roastery"
+    ],
+    "description": "Shelved second roastery"
+   },
+   {
+    "name": "15 kg roaster",
+    "type": "Product",
+    "aliases": [],
+    "description": "Roaster to install by May"
+   },
+   {
+    "name": "Explain price rises early",
+    "type": "Lesson",
+    "aliases": [],
+    "description": "Notice rule for price changes"
+   },
+   {
+    "name": "Cooperativa Rio Claro",
+    "type": "Organization",
+    "aliases": [
+     "Rio Claro"
+    ],
+    "description": "Supplier to visit"
+   },
+   {
+    "name": "Fernwick at Home",
+    "type": "Product",
+    "aliases": [],
+    "description": "Subscription"
+   }
+  ],
+  "relationships": [
+   {
+    "source": "Fernwick Roasting Co",
+    "target": "2026 Plan",
+    "type": "AUTHORED",
+    "detail": "annual plan",
+    "valid_from": null,
+    "valid_to": null,
+    "modality": "fact",
+    "confidence": "high"
+   },
+   {
+    "source": "2026 Plan",
+    "target": "15 kg roaster",
+    "type": "COVERS",
+    "detail": "install by May",
+    "valid_from": null,
+    "valid_to": null,
+    "modality": "plan",
+    "confidence": "high"
+   }
+  ],
+  "claims": [
+   {
+    "subject": "Fernwick Roasting Co",
+    "attribute": "wholesale accounts",
+    "value": "24",
+    "valid_from": null,
+    "valid_to": null,
+    "modality": "fact",
+    "confidence": "high",
+    "evidence": null,
+    "quote": "24 wholesale accounts"
+   },
+   {
+    "subject": "Fernwick at Home",
+    "attribute": "subscribers",
+    "value": "about 500",
+    "valid_from": null,
+    "valid_to": null,
+    "modality": "fact",
+    "confidence": "high",
+    "evidence": null,
+    "quote": "about 500 subscribers"
+   },
+   {
+    "subject": "Millbrook roastery",
+    "attribute": "status",
+    "value": "shelved",
+    "valid_from": null,
+    "valid_to": null,
+    "modality": "fact",
+    "confidence": "high",
+    "evidence": null,
+    "quote": "Millbrook shelved"
+   },
+   {
+    "subject": "Fernwick Roasting Co",
+    "attribute": "wholesale accounts target",
+    "value": "35 by December 2026",
+    "valid_from": null,
+    "valid_to": null,
+    "modality": "plan",
+    "confidence": "high",
+    "evidence": null,
+    "quote": "Reach 35 wholesale accounts and 800 subscribers by December"
+   },
+   {
+    "subject": "Fernwick at Home",
+    "attribute": "subscribers target",
+    "value": "800 by December 2026",
+    "valid_from": null,
+    "valid_to": null,
+    "modality": "plan",
+    "confidence": "high",
+    "evidence": null,
+    "quote": "Reach 35 wholesale accounts and 800 subscribers by December"
+   }
+  ]
+ },
+ "wiki/entities/Alta Verde Importers.md::0": {
+  "model": "hand-written",
+  "entities": [
+   {
+    "name": "Alta Verde Importers",
+    "type": "Organization",
+    "aliases": [
+     "Alta Verde"
+    ],
+    "description": "Green coffee importer; Fernwick's main supplier 2021 to June 2025"
+   },
+   {
+    "name": "Grace Lindqvist",
+    "type": "Person",
+    "aliases": [],
+    "description": "Account manager at Alta Verde Importers"
+   },
+   {
+    "name": "Cooperativa Rio Claro",
+    "type": "Organization",
+    "aliases": [
+     "Rio Claro"
+    ],
+    "description": "Supplier that replaced Alta Verde"
+   },
+   {
+    "name": "Harbour Blend",
+    "type": "Product",
+    "aliases": [],
+    "description": "House blend"
+   },
+   {
+    "name": "Fernwick Roasting Co",
+    "type": "Organization",
+    "aliases": [
+     "Fernwick"
+    ],
+    "description": "Coffee roaster"
+   }
+  ],
+  "relationships": [
+   {
+    "source": "Alta Verde Importers",
+    "target": "Fernwick Roasting Co",
+    "type": "SUPPLIER_TO",
+    "detail": "supplied most of the coffee from 2021 until June 2025; now small lots of Brazil",
+    "valid_from": "2021",
+    "valid_to": "2025-06",
+    "modality": "fact",
+    "confidence": "high"
+   },
+   {
+    "source": "Grace Lindqvist",
+    "target": "Alta Verde Importers",
+    "type": "ROLE_AT",
+    "detail": "account manager",
+    "valid_from": null,
+    "valid_to": null,
+    "modality": "fact",
+    "confidence": "high"
+   },
+   {
+    "source": "Cooperativa Rio Claro",
+    "target": "Alta Verde Importers",
+    "type": "REPLACED",
+    "detail": "main volume moved to Rio Claro",
+    "valid_from": null,
+    "valid_to": null,
+    "modality": "fact",
+    "confidence": "high"
+   }
+  ],
+  "claims": [
+   {
+    "subject": "Alta Verde Importers",
+    "attribute": "late shipments 2025",
+    "value": "April and May",
+    "valid_from": null,
+    "valid_to": null,
+    "modality": "fact",
+    "confidence": "high",
+    "evidence": null,
+    "quote": "two shipments arrived late (April and May)"
+   },
+   {
+    "subject": "Alta Verde Importers",
+    "attribute": "price increase",
+    "value": "18% for the second half of 2025",
+    "valid_from": null,
+    "valid_to": null,
+    "modality": "reported",
+    "confidence": "high",
+    "evidence": null,
+    "quote": "an 18% price increase for the second half of the year"
+   },
+   {
+    "subject": "Fernwick Roasting Co",
+    "attribute": "main green coffee supplier",
+    "value": "Alta Verde Importers",
+    "valid_from": "2021",
+    "valid_to": "2025-06",
+    "modality": "fact",
+    "confidence": "high",
+    "evidence": null,
+    "quote": "supplied most of our coffee from 2021 until June 2025"
+   }
+  ]
+ },
+ "wiki/entities/Cooperativa Rio Claro.md::0": {
+  "model": "hand-written",
+  "entities": [
+   {
+    "name": "Cooperativa Rio Claro",
+    "type": "Organization",
+    "aliases": [
+     "Rio Claro"
+    ],
+    "description": "Coffee growers' cooperative in Huila, Colombia; Fernwick's direct-trade supplier"
+   },
+   {
+    "name": "Huila",
+    "type": "Location",
+    "aliases": [],
+    "description": "Coffee region in Colombia"
+   },
+   {
+    "name": "Tomas Herrera",
+    "type": "Person",
+    "aliases": [],
+    "description": "Export contact at Cooperativa Rio Claro"
+   },
+   {
+    "name": "Harbour Blend",
+    "type": "Product",
+    "aliases": [],
+    "description": "House blend with a Rio Claro component"
+   },
+   {
+    "name": "Fernwick Roasting Co",
+    "type": "Organization",
+    "aliases": [
+     "Fernwick"
+    ],
+    "description": "Coffee roaster"
+   },
+   {
+    "name": "Switch green coffee supplier to Cooperativa Rio Claro",
+    "type": "Decision",
+    "aliases": [],
+    "description": "Move main green coffee volume to Rio Claro"
+   }
+  ],
+  "relationships": [
+   {
+    "source": "Cooperativa Rio Claro",
+    "target": "Huila",
+    "type": "LOCATED_IN",
+    "detail": "cooperative in Huila, Colombia",
+    "valid_from": null,
+    "valid_to": null,
+    "modality": "fact",
+    "confidence": "high"
+   },
+   {
+    "source": "Tomas Herrera",
+    "target": "Cooperativa Rio Claro",
+    "type": "ROLE_AT",
+    "detail": "export contact",
+    "valid_from": null,
+    "valid_to": null,
+    "modality": "fact",
+    "confidence": "high"
+   },
+   {
+    "source": "Cooperativa Rio Claro",
+    "target": "Fernwick Roasting Co",
+    "type": "SUPPLIER_TO",
+    "detail": "direct since July 2025; Colombian component of Harbour Blend and natural Caturra",
+    "valid_from": "2025-07",
+    "valid_to": null,
+    "modality": "fact",
+    "confidence": "high"
+   }
+  ],
+  "claims": [
+   {
+    "subject": "Cooperativa Rio Claro",
+    "attribute": "member farms",
+    "value": "about 140",
+    "valid_from": null,
+    "valid_to": null,
+    "modality": "fact",
+    "confidence": "high",
+    "evidence": null,
+    "quote": "about 140 member farms"
+   },
+   {
+    "subject": "Cooperativa Rio Claro",
+    "attribute": "buying direct since",
+    "value": "July 2025",
+    "valid_from": "2025-07",
+    "valid_to": null,
+    "modality": "fact",
+    "confidence": "high",
+    "evidence": null,
+    "quote": "We buy direct from them since July 2025"
+   }
+  ]
+ },
+ "wiki/entities/Daniel Reyes.md::0": {
+  "model": "hand-written",
+  "entities": [
+   {
+    "name": "Daniel Reyes",
+    "type": "Person",
+    "aliases": [],
+    "description": "Head roaster at Fernwick since May 2025"
+   },
+   {
+    "name": "Fernwick Roasting Co",
+    "type": "Organization",
+    "aliases": [],
+    "description": "Coffee roaster"
+   },
+   {
+    "name": "Maya Okafor",
+    "type": "Person",
+    "aliases": [],
+    "description": "Former head roaster who trained Daniel"
+   },
+   {
+    "name": "Cooperativa Rio Claro",
+    "type": "Organization",
+    "aliases": [
+     "Rio Claro"
+    ],
+    "description": "Supplier chosen after Daniel's cupping trials"
+   },
+   {
+    "name": "2025 Port Alder Regional Roasting Cup",
+    "type": "Event",
+    "aliases": [],
+    "description": "Regional roasting competition where Daniel placed second"
+   }
+  ],
+  "relationships": [
+   {
+    "source": "Daniel Reyes",
+    "target": "Fernwick Roasting Co",
+    "type": "ROLE_AT",
+    "detail": "production roaster from March 2023",
+    "valid_from": "2023-03",
+    "valid_to": "2025-05",
+    "modality": "fact",
+    "confidence": "high"
+   },
+   {
+    "source": "Daniel Reyes",
+    "target": "Fernwick Roasting Co",
+    "type": "ROLE_AT",
+    "detail": "head roaster since 1 May 2025",
+    "valid_from": "2025-05-01",
+    "valid_to": null,
+    "modality": "fact",
+    "confidence": "high"
+   },
+   {
+    "source": "Daniel Reyes",
+    "target": "2025 Port Alder Regional Roasting Cup",
+    "type": "RECEIVED",
+    "detail": "placed second",
+    "valid_from": null,
+    "valid_to": null,
+    "modality": "fact",
+    "confidence": "high"
+   },
+   {
+    "source": "Daniel Reyes",
+    "target": "2025 Port Alder Regional Roasting Cup",
+    "type": "PARTICIPATED_IN",
+    "detail": "competed",
+    "valid_from": null,
+    "valid_to": null,
+    "modality": "fact",
+    "confidence": "high"
+   }
+  ],
+  "claims": [
+   {
+    "subject": "Fernwick Roasting Co",
+    "attribute": "head roaster",
+    "value": "Daniel Reyes",
+    "valid_from": "2025-05-01",
+    "valid_to": null,
+    "modality": "fact",
+    "confidence": "high",
+    "evidence": null,
+    "quote": "Head roaster since 1 May 2025"
+   },
+   {
+    "subject": "Daniel Reyes",
+    "attribute": "joined Fernwick",
+    "value": "March 2023",
+    "valid_from": null,
+    "valid_to": null,
+    "modality": "fact",
+    "confidence": "high",
+    "evidence": null,
+    "quote": "Joined [[Fernwick Roasting Co]] in March 2023 as production roaster"
+   }
+  ]
+ },
+ "wiki/entities/Fernwick Roasting Co.md::0": {
+  "model": "hand-written",
+  "entities": [
+   {
+    "name": "Fernwick Roasting Co",
+    "type": "Organization",
+    "aliases": [
+     "Fernwick",
+     "FRC"
+    ],
+    "description": "Specialty coffee roaster in Port Alder founded in 2021"
+   },
+   {
+    "name": "Ruth Calloway",
+    "type": "Person",
+    "aliases": [],
+    "description": "Founder of Fernwick Roasting Co"
+   },
+   {
+    "name": "Port Alder",
+    "type": "Location",
+    "aliases": [],
+    "description": "Town where Fernwick roasts"
+   },
+   {
+    "name": "Harbour Blend",
+    "type": "Product",
+    "aliases": [],
+    "description": "Fernwick's house espresso"
+   },
+   {
+    "name": "Fernwick at Home",
+    "type": "Product",
+    "aliases": [],
+    "description": "Fernwick's coffee subscription"
+   },
+   {
+    "name": "Cooperativa Rio Claro",
+    "type": "Organization",
+    "aliases": [
+     "Rio Claro"
+    ],
+    "description": "Main green coffee supplier"
+   },
+   {
+    "name": "Alta Verde Importers",
+    "type": "Organization",
+    "aliases": [
+     "Alta Verde"
+    ],
+    "description": "Green coffee importer used before July 2025"
+   }
+  ],
+  "relationships": [
+   {
+    "source": "Ruth Calloway",
+    "target": "Fernwick Roasting Co",
+    "type": "FOUNDED",
+    "detail": "founded in 2021",
+    "valid_from": "2021",
+    "valid_to": null,
+    "modality": "fact",
+    "confidence": "high"
+   },
+   {
+    "source": "Fernwick Roasting Co",
+    "target": "Port Alder",
+    "type": "LOCATED_IN",
+    "detail": "roasts in a unit on Quay Street",
+    "valid_from": null,
+    "valid_to": null,
+    "modality": "fact",
+    "confidence": "high"
+   },
+   {
+    "source": "Fernwick Roasting Co",
+    "target": "Harbour Blend",
+    "type": "BUILT",
+    "detail": "house espresso",
+    "valid_from": null,
+    "valid_to": null,
+    "modality": "fact",
+    "confidence": "high"
+   },
+   {
+    "source": "Fernwick Roasting Co",
+    "target": "Fernwick at Home",
+    "type": "BUILT",
+    "detail": "subscription",
+    "valid_from": null,
+    "valid_to": null,
+    "modality": "fact",
+    "confidence": "high"
+   },
+   {
+    "source": "Cooperativa Rio Claro",
+    "target": "Fernwick Roasting Co",
+    "type": "SUPPLIER_TO",
+    "detail": "green coffee comes mainly from Rio Claro",
+    "valid_from": "2025-07",
+    "valid_to": null,
+    "modality": "fact",
+    "confidence": "high"
+   },
+   {
+    "source": "Alta Verde Importers",
+    "target": "Fernwick Roasting Co",
+    "type": "SUPPLIER_TO",
+    "detail": "supplier before July 2025",
+    "valid_from": null,
+    "valid_to": "2025-07",
+    "modality": "fact",
+    "confidence": "high"
+   }
+  ],
+  "claims": [
+   {
+    "subject": "Fernwick Roasting Co",
+    "attribute": "main green coffee supplier",
+    "value": "Cooperativa Rio Claro",
+    "valid_from": null,
+    "valid_to": null,
+    "modality": "fact",
+    "confidence": "high",
+    "evidence": null,
+    "quote": "Green coffee comes mainly from [[Cooperativa Rio Claro]]"
+   },
+   {
+    "subject": "Fernwick Roasting Co",
+    "attribute": "sales channels",
+    "value": "wholesale, retail bags and subscription",
+    "valid_from": null,
+    "valid_to": null,
+    "modality": "fact",
+    "confidence": "high",
+    "evidence": null,
+    "quote": "sell three ways"
+   }
+  ]
+ },
+ "wiki/entities/Lena Fischer.md::0": {
+  "model": "hand-written",
+  "entities": [
+   {
+    "name": "Lena Fischer",
+    "type": "Person",
+    "aliases": [],
+    "description": "Part-time finance lead at Fernwick since February 2024"
+   },
+   {
+    "name": "Fernwick Roasting Co",
+    "type": "Organization",
+    "aliases": [],
+    "description": "Coffee roaster"
+   }
+  ],
+  "relationships": [
+   {
+    "source": "Lena Fischer",
+    "target": "Fernwick Roasting Co",
+    "type": "ROLE_AT",
+    "detail": "part-time finance lead, two days a week",
+    "valid_from": "2024-02",
+    "valid_to": null,
+    "modality": "fact",
+    "confidence": "high"
+   }
+  ],
+  "claims": [
+   {
+    "subject": "Lena Fischer",
+    "attribute": "role",
+    "value": "part-time finance lead",
+    "valid_from": null,
+    "valid_to": null,
+    "modality": "fact",
+    "confidence": "high",
+    "evidence": null,
+    "quote": "Part-time finance lead at [[Fernwick Roasting Co]] since February 2024"
+   },
+   {
+    "subject": "Lena Fischer",
+    "attribute": "responsibilities",
+    "value": "books, payroll, late invoices, monthly cash-flow forecast",
+    "valid_from": null,
+    "valid_to": null,
+    "modality": "fact",
+    "confidence": "high",
+    "evidence": null,
+    "quote": "Lena keeps the books, runs payroll, chases late invoices and prepares the monthly cash-flow forecast"
+   }
+  ]
+ },
+ "wiki/entities/Maya Okafor.md::0": {
+  "model": "hand-written",
+  "entities": [
+   {
+    "name": "Maya Okafor",
+    "type": "Person",
+    "aliases": [],
+    "description": "Head roaster at Fernwick from 2021 to April 2025"
+   },
+   {
+    "name": "Fernwick Roasting Co",
+    "type": "Organization",
+    "aliases": [],
+    "description": "Coffee roaster"
+   },
+   {
+    "name": "Harbour Blend",
+    "type": "Product",
+    "aliases": [],
+    "description": "House espresso whose roast profiles Maya built"
+   },
+   {
+    "name": "Daniel Reyes",
+    "type": "Person",
+    "aliases": [],
+    "description": "Roaster trained by Maya"
+   },
+   {
+    "name": "Lisbon",
+    "type": "Location",
+    "aliases": [],
+    "description": "Where Maya moved"
+   }
+  ],
+  "relationships": [
+   {
+    "source": "Maya Okafor",
+    "target": "Fernwick Roasting Co",
+    "type": "ROLE_AT",
+    "detail": "head roaster",
+    "valid_from": "2021",
+    "valid_to": "2025-04",
+    "modality": "fact",
+    "confidence": "high"
+   },
+   {
+    "source": "Maya Okafor",
+    "target": "Harbour Blend",
+    "type": "BUILT",
+    "detail": "built the roast profiles",
+    "valid_from": null,
+    "valid_to": null,
+    "modality": "fact",
+    "confidence": "high"
+   },
+   {
+    "source": "Maya Okafor",
+    "target": "Daniel Reyes",
+    "type": "RELATED_TO",
+    "detail": "trained Daniel",
+    "valid_from": null,
+    "valid_to": null,
+    "modality": "fact",
+    "confidence": "high"
+   }
+  ],
+  "claims": [
+   {
+    "subject": "Fernwick Roasting Co",
+    "attribute": "head roaster",
+    "value": "Maya Okafor",
+    "valid_from": "2021",
+    "valid_to": "2025-04",
+    "modality": "fact",
+    "confidence": "high",
+    "evidence": null,
+    "quote": "Head roaster at [[Fernwick Roasting Co]] from the day we opened in 2021 until the end of April 2025"
+   },
+   {
+    "subject": "Maya Okafor",
+    "attribute": "departure",
+    "value": "end of April 2025, moving to Lisbon",
+    "valid_from": null,
+    "valid_to": null,
+    "modality": "fact",
+    "confidence": "high",
+    "evidence": null,
+    "quote": "She left at the end of April 2025 to move to Lisbon"
+   }
+  ]
+ },
+ "wiki/entities/Priya Nandakumar.md::0": {
+  "model": "hand-written",
+  "entities": [
+   {
+    "name": "Priya Nandakumar",
+    "type": "Person",
+    "aliases": [
+     "Priya"
+    ],
+    "description": "Advisor to Fernwick since April 2024; former operations director at Saltmarsh Hotels"
+   },
+   {
+    "name": "Fernwick Roasting Co",
+    "type": "Organization",
+    "aliases": [],
+    "description": "Coffee roaster Priya advises"
+   },
+   {
+    "name": "Saltmarsh Hotels",
+    "type": "Organization",
+    "aliases": [],
+    "description": "Hotel group where Priya was operations director"
+   }
+  ],
+  "relationships": [
+   {
+    "source": "Priya Nandakumar",
+    "target": "Fernwick Roasting Co",
+    "type": "ADVISES",
+    "detail": "advisor on a monthly retainer since April 2024",
+    "valid_from": "2024-04",
+    "valid_to": null,
+    "modality": "fact",
+    "confidence": "high"
+   },
+   {
+    "source": "Priya Nandakumar",
+    "target": "Saltmarsh Hotels",
+    "type": "ROLE_AT",
+    "detail": "operations director for six years; ran food and beverage purchasing",
+    "valid_from": null,
+    "valid_to": null,
+    "modality": "fact",
+    "confidence": "high"
+   }
+  ],
+  "claims": [
+   {
+    "subject": "Priya Nandakumar",
+    "attribute": "previous role",
+    "value": "operations director at Saltmarsh Hotels",
+    "valid_from": null,
+    "valid_to": null,
+    "modality": "fact",
+    "confidence": "high",
+    "evidence": null,
+    "quote": "Priya was operations director at Saltmarsh Hotels for six years"
+   },
+   {
+    "subject": "Priya Nandakumar",
+    "attribute": "advisor since",
+    "value": "April 2024",
+    "valid_from": null,
+    "valid_to": null,
+    "modality": "fact",
+    "confidence": "high",
+    "evidence": null,
+    "quote": "Advisor to [[Fernwick Roasting Co]] since April 2024"
+   }
+  ]
+ },
+ "wiki/entities/Ruth Calloway.md::0": {
+  "model": "hand-written",
+  "entities": [
+   {
+    "name": "Ruth Calloway",
+    "type": "Person",
+    "aliases": [],
+    "description": "Founder and managing director of Fernwick Roasting Co"
+   },
+   {
+    "name": "Fernwick Roasting Co",
+    "type": "Organization",
+    "aliases": [],
+    "description": "Ruth's coffee roastery"
+   },
+   {
+    "name": "Brightway Grocers",
+    "type": "Organization",
+    "aliases": [],
+    "description": "Grocery chain where Ruth was a coffee and tea buyer"
+   },
+   {
+    "name": "Lena Fischer",
+    "type": "Person",
+    "aliases": [],
+    "description": "Handles Fernwick's finances"
+   }
+  ],
+  "relationships": [
+   {
+    "source": "Ruth Calloway",
+    "target": "Fernwick Roasting Co",
+    "type": "ROLE_AT",
+    "detail": "founder and managing director",
+    "valid_from": null,
+    "valid_to": null,
+    "modality": "fact",
+    "confidence": "high"
+   },
+   {
+    "source": "Ruth Calloway",
+    "target": "Brightway Grocers",
+    "type": "ROLE_AT",
+    "detail": "coffee and tea buyer for nine years",
+    "valid_from": null,
+    "valid_to": null,
+    "modality": "fact",
+    "confidence": "high"
+   },
+   {
+    "source": "Lena Fischer",
+    "target": "Fernwick Roasting Co",
+    "type": "ROLE_AT",
+    "detail": "handles the finances",
+    "valid_from": null,
+    "valid_to": null,
+    "modality": "fact",
+    "confidence": "high"
+   }
+  ],
+  "claims": [
+   {
+    "subject": "Ruth Calloway",
+    "attribute": "years as buyer at Brightway Grocers",
+    "value": "9",
+    "valid_from": null,
+    "valid_to": null,
+    "modality": "fact",
+    "confidence": "high",
+    "evidence": null,
+    "quote": "nine years as a coffee and tea buyer for Brightway Grocers"
+   },
+   {
+    "subject": "Fernwick Roasting Co",
+    "attribute": "Quay Street unit opened",
+    "value": "2021",
+    "valid_from": null,
+    "valid_to": null,
+    "modality": "fact",
+    "confidence": "high",
+    "evidence": null,
+    "quote": "opened the Quay Street unit in 2021"
+   }
+  ]
+ },
+ "wiki/entities/Sam Patel.md::0": {
+  "model": "hand-written",
+  "entities": [
+   {
+    "name": "Sam Patel",
+    "type": "Person",
+    "aliases": [],
+    "description": "Wholesale support and barista trainer at Fernwick"
+   },
+   {
+    "name": "Fernwick Roasting Co",
+    "type": "Organization",
+    "aliases": [],
+    "description": "Coffee roaster"
+   },
+   {
+    "name": "Harbour Blend",
+    "type": "Product",
+    "aliases": [],
+    "description": "House espresso Sam trains client staff on"
+   },
+   {
+    "name": "Sam Whitlock",
+    "type": "Person",
+    "aliases": [],
+    "description": "Owner of Corner Hound Cafe, a different Sam"
+   },
+   {
+    "name": "Corner Hound Cafe",
+    "type": "Organization",
+    "aliases": [],
+    "description": "Café owned by Sam Whitlock"
+   }
+  ],
+  "relationships": [
+   {
+    "source": "Sam Patel",
+    "target": "Fernwick Roasting Co",
+    "type": "ROLE_AT",
+    "detail": "wholesale support and barista trainer since September 2023",
+    "valid_from": "2023-09",
+    "valid_to": null,
+    "modality": "fact",
+    "confidence": "high"
+   },
+   {
+    "source": "Sam Whitlock",
+    "target": "Corner Hound Cafe",
+    "type": "ROLE_AT",
+    "detail": "owner",
+    "valid_from": null,
+    "valid_to": null,
+    "modality": "fact",
+    "confidence": "high"
+   }
+  ],
+  "claims": [
+   {
+    "subject": "Sam Patel",
+    "attribute": "role",
+    "value": "wholesale support and barista trainer",
+    "valid_from": null,
+    "valid_to": null,
+    "modality": "fact",
+    "confidence": "high",
+    "evidence": null,
+    "quote": "Wholesale support and barista trainer at [[Fernwick Roasting Co]] since September 2023"
+   }
+  ]
+ }
+}

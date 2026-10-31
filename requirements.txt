@@ -1,0 +1,7 @@
+neo4j>=5.26
+pyyaml>=6.0
+# Quickstart embeddings (EMBED_BACKEND=fastembed). Not needed when EMBED_BACKEND=ollama.
+fastembed>=0.4
+# Only for extract_entities.py (optional; the quickstart loads data/sample_extractions.json instead).
+anthropic>=2.3  # output_config (structured outputs + effort) needs a recent SDK
+brotli>=1.2  # older brotli builds break httpx response decoding in the Anthropic SDK

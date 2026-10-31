@@ -1,0 +1,22 @@
+# Local Neo4j for the graph. Reads NEO4J_PASSWORD and the optional port overrides from .env.
+# 5.26+ is required: the loaders use dynamic labels ($(r.type)) and CALL (x) { ... } IN TRANSACTIONS.
+services:
+  neo4j:
+    image: neo4j:5.26-community
+    ports:
+      - "${NEO4J_HTTP_PORT:-7474}:7474"   # browser UI
+      - "${NEO4J_BOLT_PORT:-7687}:7687"   # driver
+    environment:
+      NEO4J_AUTH: neo4j/${NEO4J_PASSWORD:?set NEO4J_PASSWORD in .env}
+      NEO4J_server_memory_heap_max__size: 1G
+      NEO4J_server_memory_pagecache_size: 512M
+    volumes:
+      - neo4j-data:/data
+    healthcheck:
+      test: ["CMD-SHELL", "wget -qO- http://localhost:7474 >/dev/null 2>&1 || exit 1"]
+      interval: 5s
+      timeout: 5s
+      retries: 30
+
+volumes:
+  neo4j-data:

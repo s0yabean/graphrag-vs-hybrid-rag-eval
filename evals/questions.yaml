@@ -1,0 +1,374 @@
+# Retrieval eval questions for the SYNTHETIC sample vault (sample_vault/). See evals/README.md for the categories
+# and writing rules. These are not the 47 questions behind the published results; those were written from private
+# notes and are not in this repo.
+#
+# Fields
+#   id          unique, e.g. fw-multi-02
+#   category    single_fact | multi_hop | entity_rollup | temporal | modality_trap |
+#               broad_theme | paraphrase_alias | disambiguation | unanswerable
+#   split       dev | test
+#   status      draft | approved   (only approved questions are scored)
+#   scope       vault-relative folder both methods search ("" = the whole vault)
+#   question    worded the way you would really ask it, not copied from the note
+#   gold        notes that hold the evidence (vault-relative paths)
+#                 grade 2 = essential, 1 = supporting, or a distractor when `why` starts with "distractor"
+#   key_facts   atomic facts a correct answer must state; quote = exact text from a gold note (validate.py checks it)
+#   expected    a short model answer, for a later answer-level judge
+#   traps       unanswerable only: decoy values in the notes (plans, AI advice) that must not be reported as fact
+
+- id: fw-single-01
+  category: single_fact
+  split: dev
+  status: approved
+  scope: ""
+  question: How much grant money did the roastery get from the local business fund, and what was it for?
+  gold:
+  - path: Funding/Port Alder Small Business Fund grant.md
+    grade: 2
+  - path: Operations/Roasting equipment.md
+    grade: 1
+  key_facts:
+  - fact: The grant was $15,000.
+    modality: fact
+    quote: Grant of $15,000 from the Port Alder Small Business Fund
+  - fact: It paid for an afterburner on the roaster.
+    modality: fact
+    quote: to fit an afterburner to the roaster
+  expected: $15,000 from the Port Alder Small Business Fund, awarded in October 2025, to fit an afterburner.
+
+- id: fw-single-02
+  category: single_fact
+  split: test
+  status: approved
+  scope: ""
+  question: When did the home coffee subscription start taking customers?
+  gold:
+  - path: Operations/Fernwick at Home.md
+    grade: 2
+  - path: Journal/2024-11-04.md
+    grade: 1
+  key_facts:
+  - fact: Fernwick at Home launched on 4 November 2024.
+    modality: fact
+    quote: Launched on 4 November 2024
+  expected: 4 November 2024, later than the Q3 2024 target.
+
+- id: fw-multi-01
+  category: multi_hop
+  split: dev
+  status: approved
+  scope: ""
+  question: Who brought in Fernwick's biggest wholesale customer, and where did that person work before advising Fernwick?
+  gold:
+  - path: Meetings/2024-06-18 Intro meeting Juniper Cafe Group.md
+    grade: 2
+  - path: wiki/entities/Priya Nandakumar.md
+    grade: 2
+  - path: Clients/Juniper Cafe Group.md
+    grade: 1
+  key_facts:
+  - fact: Juniper Cafe Group is the largest wholesale account.
+    modality: fact
+    quote: our largest wholesale account since July 2024
+  - fact: Priya Nandakumar introduced Juniper Cafe Group.
+    modality: fact
+    quote: Introduced by [[Priya Nandakumar]]
+  - fact: Priya was operations director at Saltmarsh Hotels.
+    modality: fact
+    quote: Priya was operations director at Saltmarsh Hotels for six years
+  expected: Priya Nandakumar, who was operations director at Saltmarsh Hotels for six years.
+
+- id: fw-multi-02
+  category: multi_hop
+  split: test
+  status: approved
+  scope: ""
+  question: Which café came to Fernwick on a referral from the owner of its very first wholesale customer?
+  gold:
+  - path: Clients/Corner Hound Cafe.md
+    grade: 2
+  - path: Clients/Pine and Pour.md
+    grade: 2
+  key_facts:
+  - fact: Corner Hound Cafe, owned by Sam Whitlock, was the first wholesale customer.
+    modality: fact
+    quote: Our first wholesale customer, since March 2022
+  - fact: Sam Whitlock referred Pine and Pour.
+    modality: fact
+    quote: The owners were referred to us by Sam Whitlock
+  expected: Pine and Pour, referred by Sam Whitlock of Corner Hound Cafe; it became a client in January 2026.
+
+- id: fw-multi-03
+  category: multi_hop
+  split: test
+  status: approved
+  scope: ""
+  question: Whose coffee did Fernwick's competition-winning roaster use, and since when has Fernwick bought from them?
+  gold:
+  - path: Events/2025 Port Alder Regional Roasting Cup.md
+    grade: 2
+  - path: wiki/entities/Cooperativa Rio Claro.md
+    grade: 2
+  - path: Decisions/2025-06 Switch green coffee supplier.md
+    grade: 1
+  key_facts:
+  - fact: Daniel Reyes placed second with a natural Caturra from Cooperativa Rio Claro.
+    modality: fact
+    quote: roasting a natural Caturra from [[Cooperativa Rio Claro]]
+  - fact: Fernwick has bought direct from Rio Claro since July 2025.
+    modality: fact
+    quote: We buy direct from them since July 2025
+  expected: Cooperativa Rio Claro in Huila, Colombia; Fernwick has bought direct from them since July 2025.
+
+- id: fw-rollup-01
+  category: entity_rollup
+  split: dev
+  status: approved
+  scope: ""
+  question: Which cafés, bakeries and hotels currently buy their coffee wholesale from Fernwick?
+  gold:
+  - path: Clients/Juniper Cafe Group.md
+    grade: 2
+  - path: Clients/Corner Hound Cafe.md
+    grade: 2
+  - path: Clients/Little Tern Bakery.md
+    grade: 2
+  - path: Clients/Halyard Hotel.md
+    grade: 2
+  - path: Clients/Northgate Library Cafe.md
+    grade: 2
+  - path: Clients/Pine and Pour.md
+    grade: 2
+  - path: Clients/The Copper Kettle.md
+    grade: 1
+    why: distractor, a former client that left in October 2025
+  key_facts:
+  - fact: Juniper Cafe Group
+    modality: fact
+    quote: our largest wholesale account since July 2024
+  - fact: Corner Hound Cafe
+    modality: fact
+    quote: Our first wholesale customer, since March 2022
+  - fact: Little Tern Bakery
+    modality: fact
+    quote: wholesale client since May 2023
+  - fact: Halyard Hotel
+    modality: fact
+    quote: wholesale client since February 2025
+  - fact: Northgate Library Cafe
+    modality: fact
+    quote: Wholesale client since September 2025
+  - fact: Pine and Pour
+    modality: fact
+    quote: wholesale client since January 2026
+  expected: Juniper Cafe Group, Corner Hound Cafe, Little Tern Bakery, Halyard Hotel, Northgate Library Cafe and Pine and Pour; not The Copper Kettle, which left.
+
+- id: fw-rollup-02
+  category: entity_rollup
+  split: test
+  status: approved
+  scope: ""
+  question: Who has been in charge of roasting at Fernwick over the years?
+  gold:
+  - path: wiki/entities/Maya Okafor.md
+    grade: 2
+  - path: wiki/entities/Daniel Reyes.md
+    grade: 2
+  - path: Meetings/2025-04-14 Quarterly review Q1 2025.md
+    grade: 1
+  key_facts:
+  - fact: Maya Okafor was head roaster from 2021 to the end of April 2025.
+    modality: fact
+    quote: from the day we opened in 2021 until the end of April 2025
+  - fact: Daniel Reyes has been head roaster since 1 May 2025.
+    modality: fact
+    quote: Head roaster since 1 May 2025
+  expected: Maya Okafor from 2021 to April 2025, then Daniel Reyes from 1 May 2025.
+
+- id: fw-temporal-01
+  category: temporal
+  split: dev
+  status: approved
+  scope: ""
+  question: What do cafés pay per kilo for the house espresso now, and what did they pay before?
+  gold:
+  - path: Operations/2025-09 Wholesale price list.md
+    grade: 2
+  - path: Decisions/2025-08 Raise Harbour Blend to 28 per kg.md
+    grade: 2
+  - path: Operations/2025-01 Wholesale price list.md
+    grade: 1
+    why: distractor, the price before September 2025
+  - path: Operations/2024-01 Wholesale price list.md
+    grade: 1
+    why: distractor, the 2024 price
+  key_facts:
+  - fact: Harbour Blend is $28.00 per kg from 1 September 2025.
+    modality: fact
+    quote: goes from $26.50 to $28.00 per kg from 1 September 2025
+  expected: $28.00 per kg since 1 September 2025; $26.50 during 2025 before that; $24.00 in 2024.
+
+- id: fw-temporal-02
+  category: temporal
+  split: test
+  status: approved
+  scope: ""
+  question: How many wholesale accounts does Fernwick have at the latest count, and how has that number moved over the past year?
+  gold:
+  - path: Journal/2026-03-30.md
+    grade: 2
+  - path: Meetings/2025-10-21 Board meeting Q3 2025.md
+    grade: 2
+  - path: Meetings/2026-01-20 Board meeting Q4 2025.md
+    grade: 1
+  - path: Meetings/2025-04-14 Quarterly review Q1 2025.md
+    grade: 1
+    why: distractor, the April 2025 count
+  - path: Meetings/2024-10-15 Board meeting Q3 2024.md
+    grade: 1
+    why: distractor, the October 2024 count
+  key_facts:
+  - fact: 26 wholesale accounts at the end of March 2026.
+    modality: fact
+    quote: 26 wholesale accounts
+  - fact: 22 in October 2025 after losing two accounts.
+    modality: fact
+    quote: "Wholesale accounts: 22, after losing"
+  expected: 26 at the end of March 2026; 23 in April 2025, down to 22 in October 2025 after two losses, then 24 in January 2026.
+
+- id: fw-temporal-03
+  category: temporal
+  split: test
+  status: approved
+  scope: ""
+  question: Who is Fernwick's main source of green coffee today, and who was it before?
+  gold:
+  - path: wiki/entities/Fernwick Roasting Co.md
+    grade: 2
+  - path: Decisions/2025-06 Switch green coffee supplier.md
+    grade: 2
+  - path: wiki/entities/Alta Verde Importers.md
+    grade: 1
+    why: distractor, the previous supplier
+  key_facts:
+  - fact: Green coffee now comes mainly from Cooperativa Rio Claro.
+    modality: fact
+    quote: Green coffee comes mainly from [[Cooperativa Rio Claro]]
+  - fact: Before July 2025 it came from Alta Verde Importers.
+    modality: fact
+    quote: before July 2025 it came from [[Alta Verde Importers]]
+  expected: Cooperativa Rio Claro since July 2025; before that Alta Verde Importers.
+
+- id: fw-modality-01
+  category: modality_trap
+  split: dev
+  status: approved
+  scope: ""
+  question: Did Fernwick open its second roastery in Millbrook?
+  gold:
+  - path: Decisions/2026-01 Shelve Millbrook roastery.md
+    grade: 2
+  - path: Meetings/2026-01-20 Board meeting Q4 2025.md
+    grade: 2
+  - path: Strategy/2025 Plan.md
+    grade: 1
+    why: distractor, the plan to open it by Q2 2026
+  key_facts:
+  - fact: The Millbrook roastery was shelved in January 2026.
+    modality: fact
+    quote: we will not open the second roastery in Millbrook
+  - fact: A 15 kg roaster is leased for Quay Street instead.
+    modality: fact
+    quote: Instead we lease a 15 kg roaster for the Quay Street unit
+  expected: No. It was planned in the 2025 Plan but shelved in January 2026 after a $410,000 fit-out quote; Fernwick leases a 15 kg roaster instead.
+
+- id: fw-modality-02
+  category: modality_trap
+  split: test
+  status: approved
+  scope: ""
+  question: Does Fernwick sell cold brew in cans?
+  gold:
+  - path: Journal/2025-08-25.md
+    grade: 2
+  - path: AI chats/2025-08-12 Chat - pricing and growth ideas.md
+    grade: 1
+    why: distractor, a chatbot suggested it
+  key_facts:
+  - fact: Ruth decided not to launch canned cold brew.
+    modality: fact
+    quote: I decided not to do it
+  expected: No. A chatbot suggested it in August 2025; Ruth decided against it (no canning line, chiller space or sales capacity).
+
+- id: fw-theme-01
+  category: broad_theme
+  split: test
+  status: approved
+  scope: ""
+  question: Why did Fernwick keep putting its prices up during 2025?
+  gold:
+  - path: Decisions/2024-12 Raise wholesale prices for 2025.md
+    grade: 2
+  - path: Decisions/2025-06 Switch green coffee supplier.md
+    grade: 2
+  - path: Decisions/2025-08 Raise Harbour Blend to 28 per kg.md
+    grade: 2
+  key_facts:
+  - fact: Green coffee costs rose 22% year on year in 2024.
+    modality: fact
+    quote: our green coffee costs rose 22% year on year in 2024
+  - fact: Alta Verde announced an 18% increase for the second half of 2025.
+    modality: reported
+    quote: Alta Verde announced an 18% price increase for the second half of 2025
+  - fact: The move to Rio Claro raised landed cost about 9% per kg.
+    modality: fact
+    quote: raised our landed coffee cost by about 9% per kg
+  expected: Green coffee costs rose 22% in 2024 (January 2025 rise); then the move to direct trade with Rio Claro raised landed cost about 9% per kg (September 2025 rise).
+
+- id: fw-alias-01
+  category: paraphrase_alias
+  split: test
+  status: approved
+  scope: ""
+  question: Who looks after the money side of the business at FRC?
+  gold:
+  - path: wiki/entities/Lena Fischer.md
+    grade: 2
+  - path: Operations/Team and roles.md
+    grade: 1
+  key_facts:
+  - fact: Lena Fischer is the part-time finance lead.
+    modality: fact
+    quote: Part-time finance lead at [[Fernwick Roasting Co]] since February 2024
+  expected: Lena Fischer, part-time finance lead since February 2024 (books, payroll, cash-flow forecast).
+
+- id: fw-disambig-01
+  category: disambiguation
+  split: test
+  status: approved
+  scope: ""
+  question: There are two people called Sam in the notes. Which one trains baristas, and which one runs a café?
+  gold:
+  - path: wiki/entities/Sam Patel.md
+    grade: 2
+  - path: Clients/Corner Hound Cafe.md
+    grade: 2
+  key_facts:
+  - fact: Sam Patel is Fernwick's barista trainer.
+    modality: fact
+    quote: Wholesale support and barista trainer at [[Fernwick Roasting Co]]
+  - fact: Sam Whitlock owns Corner Hound Cafe.
+    modality: fact
+    quote: run by its owner, Sam Whitlock
+  expected: Sam Patel trains baristas for Fernwick; Sam Whitlock owns Corner Hound Cafe.
+
+- id: fw-unanswerable-01
+  category: unanswerable
+  split: test
+  status: approved
+  scope: ""
+  question: At what valuation did Fernwick raise its seed round?
+  traps:
+  - path: Strategy/2025 Plan.md
+    value: $250,000
+  expected: The notes do not say; Fernwick planned a bank loan, not equity, and never mentions a seed round.
