@@ -1,0 +1,7 @@
+line-length = 120
+
+[lint]
+# Ruff's classic defaults (pyflakes + pycodestyle errors) plus bugbear.
+select = ["E4", "E7", "E9", "F", "B"]
+# zip(a, a[1:]) and similar pairings are deliberately uneven; strict= would break them.
+ignore = ["B905"]
