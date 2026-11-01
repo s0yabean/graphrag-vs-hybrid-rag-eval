@@ -22,7 +22,6 @@ import random
 import sys
 import threading
 import time
-from pathlib import Path
 
 import config
 
@@ -214,7 +213,7 @@ def main():
         try:
             data, usage = extract(client, row)
         except (anthropic.BadRequestError, anthropic.AuthenticationError, anthropic.PermissionDeniedError) as e:
-            raise SystemExit(f"Stopping: {type(e).__name__}: {e}")  # config problem; retrying won't help
+            raise SystemExit(f"Stopping: {type(e).__name__}: {e}") from e  # config problem; retrying won't help
         except (anthropic.APIStatusError, anthropic.APIConnectionError, RuntimeError, json.JSONDecodeError) as e:
             with lock:
                 totals["failed"] += 1

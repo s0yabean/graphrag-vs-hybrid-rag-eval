@@ -195,8 +195,8 @@ def summarise(questions, results, split_arg, run_dir):
                     tally[c][0 if d > 0 else 1 if d == 0 else 2] += 1
             for c in [*cats, "ALL"]:
                 if c in tally:
-                    w, t, l = tally[c]
-                    lines.append(f"| {c} | {w} | {t} | {l} | {sign_test(w, l):.2f} |")
+                    wins, ties, losses = tally[c]
+                    lines.append(f"| {c} | {wins} | {ties} | {losses} | {sign_test(wins, losses):.2f} |")
             lines += ["", f"Wins are for `{a}`. p < 0.05 means the difference is unlikely to be chance.", ""]
 
     for split in (["dev", "test"] if split_arg == "all" else [split_arg]):

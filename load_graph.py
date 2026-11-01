@@ -33,7 +33,6 @@ import json
 import re
 import time
 import unicodedata
-from pathlib import Path
 
 import config
 from extract_entities import cache_path, chunk_rows
