@@ -1,5 +1,7 @@
 # GraphRAG vs hybrid RAG: a retrieval eval on private notes
 
+[![CI](https://github.com/s0yabean/graphrag-vs-hybrid-rag-eval/actions/workflows/ci.yml/badge.svg)](https://github.com/s0yabean/graphrag-vs-hybrid-rag-eval/actions/workflows/ci.yml)
+
 A local Neo4j knowledge graph built from an Obsidian vault (notes, chunks, LLM-extracted entities, typed links and
 dated claims), a hybrid search baseline, and a retrieval eval that compares the two on the same questions.
 
@@ -100,6 +102,12 @@ The `timeline` shows every recorded price with its modality (the AI chat's $32 i
 decisions as `plan`) and which values are superseded. The `path` follows `LED_TO` links from late shipments to a
 supplier switch, a price rise and a lost client.
 
+Tests need no Docker, model download or API key (Neo4j and the embedder are replaced by in-memory fakes):
+
+```bash
+pip install -r requirements-dev.txt && pytest -q
+```
+
 **About the sample.** `sample_vault/` is synthetic: a fictional coffee roaster, with invented people, companies and
 numbers. Its extraction in `data/sample_extractions.json` was written by hand, so it is cleaner than an LLM's and
 favours the graph; the sample run shows the pipeline working, not the published result.
@@ -139,6 +147,7 @@ evals/
   validate.py           checks questions against the graph
   methods/              hybrid.py, graph.py, graph_notrim.py
 results/summary.md      the published aggregate numbers
+tests/                  pytest suite: metrics, chunking, graph layer, hybrid search, eval runner
 ```
 
 ## Design decisions
